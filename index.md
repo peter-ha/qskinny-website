@@ -18,28 +18,27 @@ sections:
     grid_items:
       - title: Documentation
         content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius.
+          Check out the introductory pages as well as an intial API documentation.
+          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
         actions:
           - label: Get Started
             url: /docs
             style: link
-      - title: Blog
+      - title: Success stories
         content: >-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
-          nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
+          QSkinny is already being used in projects and products. Check out
+          some real life use cases!
+          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
         actions:
-          - label: View Posts
+          - label: Learn more
             url: /blog
             style: link
-      - title: Style Guides
+      - title: Blog
         content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius.
+          Check out the latest blog posts.
+          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
         actions:
-          - label: Learn More
+          - label: Go to blog
             url: /style-guide
             style: link
   - section_id: text-img
