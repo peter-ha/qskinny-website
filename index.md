@@ -46,7 +46,7 @@ sections:
     type: section_content
     image: images/10.jpg
     image_position: left
-    title: A Section With An Image
+    title: Demo UI
     content: >-
       Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
       cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
