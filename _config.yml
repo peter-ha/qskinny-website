@@ -56,7 +56,7 @@ header:
       style: link
       has_subnav: false
     - label: GitHub
-      url: 'https://github.com/'
+      url: 'https://github.com/uwerat/qskinny'
       style: primary
       has_subnav: false
 footer:
