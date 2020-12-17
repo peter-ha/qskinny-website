@@ -44,7 +44,7 @@ sections:
             style: link
   - section_id: text-img
     type: section_content
-    image: images/10.jpg
+    image: images/iot-dashboard.png
     image_position: left
     title: Demo UI
     content: >-
