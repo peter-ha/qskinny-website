@@ -3,11 +3,11 @@ title: Home
 sections:
   - section_id: hero
     type: section_hero
-    title: Hero Section
+    title: The QSkinny UI framework
     image: images/5.jpg
     content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
+      QSkinny is a UI framework based on the Qt graphic stack and written in
+      C++. It allows users to write their UIs in C++ and/or QML.
     actions:
       - label: Get Started
         url: /docs
@@ -44,9 +44,9 @@ sections:
             style: link
   - section_id: text-img
     type: section_content
-    image: images/10.jpg
+    image: images/iot-dashboard.png
     image_position: left
-    title: A Section With An Image
+    title: Demo UI
     content: >-
       Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
       cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
