@@ -4,7 +4,7 @@ sections:
   - section_id: hero
     type: section_hero
     title: The QSkinny UI framework
-    image: images/5.jpg
+    image: images/iot-dashboard-embedded.jpeg
     content: >-
       QSkinny is a UI framework based on the Qt graphic stack and written in
       C++. It allows users to write their UIs in C++ and/or QML.
