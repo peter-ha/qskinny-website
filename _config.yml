@@ -40,7 +40,7 @@ header:
       url: /blog
       style: link
       has_subnav: false
-    - label: Sample Pages
+    - label: Blog
       url: '#'
       style: link
       has_subnav: false
