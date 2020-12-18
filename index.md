@@ -12,6 +12,23 @@ sections:
       - label: Get Started
         url: /docs
         style: primary
+  - section_id: text-img
+    type: section_content
+    image: images/iot-dashboard.png
+    image_position: left
+    title: Demo UI
+    content: >-
+      We could try to run the code here with WebAssembly somehow? Nam pulvinar
+      ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet cursus quis,
+      fringilla nec sapien. Vestibulum imperdiet nunc bibendum consectetur
+      lobortis.
+    actions:
+      - label: View Demo
+        url: /docs/getting-started
+        style: primary
+      - label: Get Started
+        url: /docs/getting-started
+        style: secondary
   - section_id: features
     type: section_grid
     col_number: three
@@ -42,23 +59,6 @@ sections:
           - label: Go to blog
             url: /style-guide
             style: link
-  - section_id: text-img
-    type: section_content
-    image: images/iot-dashboard.png
-    image_position: left
-    title: Demo UI
-    content: >-
-      We could try to run the code here with WebAssembly somehow? Nam pulvinar
-      ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet cursus quis,
-      fringilla nec sapien. Vestibulum imperdiet nunc bibendum consectetur
-      lobortis.
-    actions:
-      - label: View Demo
-        url: /docs/getting-started
-        style: primary
-      - label: Get Started
-        url: /docs/getting-started
-        style: secondary
   - section_id: features-two-col
     type: section_grid
     title: Sample Layouts
