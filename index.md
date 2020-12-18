@@ -16,7 +16,7 @@ sections:
     type: section_content
     image: images/iot-dashboard.png
     image_position: left
-    title: Demo UI
+    title: Demo
     content: >-
       We could try to run the code here with WebAssembly somehow? Nam pulvinar
       ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet cursus quis,
