@@ -11,32 +11,33 @@ sections:
     actions:
       - label: Get Started
         url: /docs
-        style: primary
+        style: secondary
   - section_id: features
     type: section_grid
     col_number: three
     grid_items:
       - title: Documentation
         content: >-
-          Check out the introductory pages as well as an intial API documentation.
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
+          Check out the introductory pages as well as an intial API
+          documentation. Donec lobortis velit sed suscipit lobortis. Ut non quam
+          metus.
         actions:
           - label: Get Started
             url: /docs
             style: link
       - title: Success stories
         content: >-
-          QSkinny is already being used in projects and products. Check out
-          some real life use cases!
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
+          QSkinny is already being used in projects and products. Check out some
+          real life use cases! Donec lobortis velit sed suscipit lobortis. Ut
+          non quam metus.
         actions:
           - label: Learn more
             url: /blog
             style: link
       - title: Blog
         content: >-
-          Check out the latest blog posts.
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
+          Check out the latest blog posts. Donec lobortis velit sed suscipit
+          lobortis. Ut non quam metus.
         actions:
           - label: Go to blog
             url: /style-guide
@@ -47,10 +48,10 @@ sections:
     image_position: left
     title: Demo UI
     content: >-
-      We could try to run the code here with WebAssembly somehow?
-      Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-      cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
-      consectetur lobortis.
+      We could try to run the code here with WebAssembly somehow? Nam pulvinar
+      ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet cursus quis,
+      fringilla nec sapien. Vestibulum imperdiet nunc bibendum consectetur
+      lobortis.
     actions:
       - label: View Demo
         url: /docs/getting-started
