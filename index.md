@@ -4,7 +4,7 @@ sections:
   - section_id: hero
     type: section_hero
     title: The QSkinny UI framework
-    image: images/5.jpg
+    image: images/iot-dashboard-embedded.jpeg
     content: >-
       QSkinny is a UI framework based on the Qt graphic stack and written in
       C++. It allows users to write their UIs in C++ and/or QML.
@@ -12,45 +12,16 @@ sections:
       - label: Get Started
         url: /docs
         style: primary
-  - section_id: features
-    type: section_grid
-    col_number: three
-    grid_items:
-      - title: Documentation
-        content: >-
-          Check out the introductory pages as well as an intial API documentation.
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
-        actions:
-          - label: Get Started
-            url: /docs
-            style: link
-      - title: Success stories
-        content: >-
-          QSkinny is already being used in projects and products. Check out
-          some real life use cases!
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
-        actions:
-          - label: Learn more
-            url: /blog
-            style: link
-      - title: Blog
-        content: >-
-          Check out the latest blog posts.
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
-        actions:
-          - label: Go to blog
-            url: /style-guide
-            style: link
   - section_id: text-img
     type: section_content
     image: images/iot-dashboard.png
     image_position: left
     title: Demo UI
     content: >-
-      We could try to run the code here with WebAssembly somehow?
-      Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-      cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
-      consectetur lobortis.
+      We could try to run the code here with WebAssembly somehow? Nam pulvinar
+      ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet cursus quis,
+      fringilla nec sapien. Vestibulum imperdiet nunc bibendum consectetur
+      lobortis.
     actions:
       - label: View Demo
         url: /docs/getting-started
@@ -58,6 +29,36 @@ sections:
       - label: Get Started
         url: /docs/getting-started
         style: secondary
+  - section_id: features
+    type: section_grid
+    col_number: three
+    grid_items:
+      - title: Documentation
+        content: >-
+          Check out the introductory pages as well as an intial API
+          documentation. Donec lobortis velit sed suscipit lobortis. Ut non quam
+          metus.
+        actions:
+          - label: Get Started
+            url: /docs
+            style: link
+      - title: Success stories
+        content: >-
+          QSkinny is already being used in projects and products. Check out some
+          real life use cases! Donec lobortis velit sed suscipit lobortis. Ut
+          non quam metus.
+        actions:
+          - label: Learn more
+            url: /blog
+            style: link
+      - title: Blog
+        content: >-
+          Check out the latest blog posts. Donec lobortis velit sed suscipit
+          lobortis. Ut non quam metus.
+        actions:
+          - label: Go to blog
+            url: /style-guide
+            style: link
   - section_id: features-two-col
     type: section_grid
     title: Sample Layouts

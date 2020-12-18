@@ -25,35 +25,24 @@ palettes:
       accent1: '#8e2de2'
       accent2: '#4a00e0'
 header:
-  title: Libris
-  logo_img: images/logo.svg
+  title: ''
+  #logo_img: images/logo.svg
   has_nav: true
   nav_links:
     - label: Home
       url: /
       style: link
       has_subnav: false
-    - label: Docs
+    - label: Documentation
       url: /docs
       style: link
       has_subnav: false
-    - label: Blog
+    - label: Success stories
       url: /blog
       style: link
       has_subnav: false
-    - label: Sample Pages
+    - label: Blog
       url: '#'
-      style: link
-      has_subnav: true
-      subnav_links:
-        - label: Overview
-          url: /overview
-          style: link
-        - label: Showcase
-          url: /showcase
-          style: link
-    - label: Style Guide
-      url: /style-guide
       style: link
       has_subnav: false
     - label: GitHub
