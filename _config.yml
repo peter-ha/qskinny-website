@@ -32,7 +32,7 @@ header:
       url: /
       style: link
       has_subnav: false
-    - label: Docs
+    - label: Documentation
       url: /docs
       style: link
       has_subnav: false
