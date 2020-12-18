@@ -36,7 +36,7 @@ header:
       url: /docs
       style: link
       has_subnav: false
-    - label: Blog
+    - label: Success stories
       url: /blog
       style: link
       has_subnav: false
