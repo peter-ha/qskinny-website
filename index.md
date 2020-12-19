@@ -18,11 +18,11 @@ sections:
     grid_items:
       - title: Why QSkinny?
         content: >-
-          Check out the introductory pages as well as an intial API
-          documentation. Donec lobortis velit sed suscipit lobortis. Ut non quam
-          metus.
+          It's free. It's 100% written in C++. Use QML if and when you want to.
+          Connect data easily, no language barrier. Flexible layouts.
+          Use your favorite tools like gdb and address sanitizers. 
         actions:
-          - label: Get Started
+          - label: Learn more
             url: /docs
             style: link
       - title: What is it?
