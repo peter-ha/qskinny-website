@@ -42,7 +42,7 @@ sections:
           - label: Get Started
             url: /docs
             style: link
-      - title: Success stories
+      - title: What is it?
         content: >-
           QSkinny is already being used in projects and products. Check out some
           real life use cases! Donec lobortis velit sed suscipit lobortis. Ut
