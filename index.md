@@ -51,7 +51,7 @@ sections:
           - label: Learn more
             url: /blog
             style: link
-      - title: Blog
+      - title: It's free!
         content: >-
           Check out the latest blog posts. Donec lobortis velit sed suscipit
           lobortis. Ut non quam metus.
