@@ -33,7 +33,7 @@ sections:
     type: section_grid
     col_number: three
     grid_items:
-      - title: Documentation
+      - title: Why QSkinny?
         content: >-
           Check out the introductory pages as well as an intial API
           documentation. Donec lobortis velit sed suscipit lobortis. Ut non quam
