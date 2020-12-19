@@ -27,12 +27,12 @@ sections:
             style: link
       - title: What is it?
         content: >-
-          QSkinny is already being used in projects and products. Check out some
-          real life use cases! Donec lobortis velit sed suscipit lobortis. Ut
-          non quam metus.
+          QSkinny is written in C++, so its API is similar to QtQWidgets.
+          It is based on the modern Qt graphic stack, so its backend is the same
+          as the one QML uses.
         actions:
           - label: Learn more
-            url: /blog
+            url: /docs
             style: link
       - title: It's free!
         content: >-
