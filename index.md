@@ -9,7 +9,7 @@ sections:
       QSkinny is a UI framework based on the Qt graphic stack and written in
       C++. It allows users to write their UIs in C++ and/or QML.
     actions:
-      - label: Get Started
+      - label: 'Get it on '
         url: /docs
         style: primary
   - section_id: text-img
