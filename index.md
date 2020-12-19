@@ -20,7 +20,6 @@ sections:
         content: >-
           It's free. It's 100% written in C++. Use QML if and when you want to.
           Connect data easily, no language barrier. Flexible layouts.
-          Use your favorite tools like gdb and address sanitizers. 
         actions:
           - label: Learn more
             url: /docs
