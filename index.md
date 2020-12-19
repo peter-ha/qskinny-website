@@ -36,10 +36,11 @@ sections:
             style: link
       - title: It's free!
         content: >-
-          Check out the latest blog posts. Donec lobortis velit sed suscipit
-          lobortis. Ut non quam metus.
+          The QSkinny source code is released under the LGPLv2, and the examples are
+          released under BSD license. This gives you a lot of freedom to use it in
+          your next project.
         actions:
-          - label: Go to blog
+          - label: Learn more
             url: /style-guide
             style: link
   - section_id: text-img
