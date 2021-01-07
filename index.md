@@ -72,7 +72,7 @@ sections:
       - label: lorem-ipsum
         url: lorem-ipsum
         style: icon
-        icon_class: lorem-ipsum
+        icon_class: bla
         new_window: false
         type: action
   - section_id: features-two-col
