@@ -36,8 +36,7 @@ sections:
       - title: It's free!
         content: >-
           The QSkinny source code is released under the LGPLv2, and the examples are
-          released under BSD license. This gives you a lot of freedom to use it in
-          your next project.
+          released under BSD license.
         actions:
           - label: Learn more
             url: /style-guide
@@ -61,27 +60,23 @@ sections:
         style: secondary
   - section_id: features-two-col
     type: section_grid
-    title: Sample Layouts
-    subtitle: An optional subtitle of the section
+    title: Presentations
+    #subtitle: An optional subtitle of the section
     col_number: two
     grid_items:
-      - title: Overview
+      - title: QSkinny - A new approach for a QtQuick framework
         content: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-          ligula, cursus id molestie vel, maximus aliquet risus. Vivamus in nibh
-          fringilla, fringilla tortor at, pulvinar orci.
+          Qt World Summit 2019, Berlin / Germany
         actions:
           - label: Learn More
-            url: /overview
+            url: https://youtu.be/LflK-xYMnk0
             style: link
-      - title: Showcase
+      - title: Using the Qt Scene Graph from C++ with QSkinny
         content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius.
+          Qt Day 2019, Florence / Italy
         actions:
           - label: Learn More
-            url: /showcase
+            url: https://youtu.be/cxYss8nmDa4
             style: link
   - section_id: cta
     type: section_cta
