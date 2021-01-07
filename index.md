@@ -58,6 +58,16 @@ sections:
       - label: Get Started
         url: /docs/getting-started
         style: secondary
+  - section_id: cta
+    type: section_cta
+    title: Success story
+    subtitle: QSkinny is at the heart of the Fendt 300 Vario tractor UI.
+    image: images/iot-dashboard.png
+    image_position: left
+    actions:
+      - label: Read more
+        url: https://www.fendt.com/int/tractors/300-vario-highlights
+        style: primary
   - section_id: features-two-col
     type: section_grid
     title: Presentations
@@ -78,14 +88,6 @@ sections:
           - label: Learn More
             url: https://youtu.be/cxYss8nmDa4
             style: link
-  - section_id: cta
-    type: section_cta
-    title: For the impatient
-    subtitle: This is an optional description for the call to action block.
-    actions:
-      - label: Get Started
-        url: /docs/getting-started/installation
-        style: primary
   - section_id: text-no-img
     type: section_content
     title: A Section Without Image
