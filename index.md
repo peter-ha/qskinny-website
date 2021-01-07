@@ -10,7 +10,7 @@ sections:
       C++. It allows users to write their UIs in C++ and/or QML.
     actions:
       - label: Get it on GitHub
-        url: /docs
+        url: https://github.com/uwerat/qskinny
         style: primary
   - section_id: features
     type: section_grid
@@ -47,26 +47,25 @@ sections:
     image_position: left
     title: Demo
     content: >-
-      We could try to run the code here with WebAssembly somehow? Nam pulvinar
-      ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet cursus quis,
-      fringilla nec sapien. Vestibulum imperdiet nunc bibendum consectetur
-      lobortis.
+      The IOT dashboard example is part of the QSkinny repository and shows a modern UI
+      composed of advanced elements.
+      You are welcome to use it as a starting point for your own project.
     actions:
-      - label: View Demo
-        url: /docs/getting-started
+      - label: Check out the example on Github
+        url: https://github.com/peter-ha/qskinny/tree/iot-dashboard/examples/iot-dashboard
         style: primary
-      - label: Get Started
-        url: /docs/getting-started
-        style: secondary
+        new_window: true
   - section_id: success_story
     type: section_content
     title: Success story
     content: >-
-      QSkinny is at the heart of the Fendt 300 Vario tractor UI.
+      QSkinny is at the heart of the Fendt 300 Vario tractor UI. It has proven to successfully
+      make its way from a research project to a key software component in a mass production
+      vehicle. In the future, the plan is to use QSkinny for more big scale UI projects.
     image: images/fendt-tractor-ui.jpeg
     image_position: right
     actions:
-      - label: Read more
+      - label: Read more from the customer
         url: 'https://www.fendt.com/int/tractors/300-vario-highlights'
         style: primary
         new_window: true
@@ -76,21 +75,17 @@ sections:
     col_number: two
     grid_items:
       - title: QSkinny - A new approach for a QtQuick framework
-        content: 'Qt World Summit 2019, Berlin / Germany'
+        content: <p>Qt World Summit 2019, Berlin / Germany</p> <iframe width="240" height="180" src="http://www.youtube.com/embed/LflK-xYMnk0" frameborder="0"> </iframe>
         actions:
-          - label: Learn More
-            url: 'https://youtu.be/LflK-xYMnk0'
-            style: link
       - title: Using the Qt Scene Graph from C++ with QSkinny
-        content: 'Qt Day 2019, Florence / Italy'
+        content: <p>Qt Day 2019, Florence / Italy</p> <iframe width="240" height="180" src="http://www.youtube.com/embed/cxYss8nmDa4" frameborder="0"> </iframe>
         actions:
-          - label: Learn More
-            url: 'https://youtu.be/cxYss8nmDa4'
-            style: link
   - section_id: contact
     type: section_cta
     title: Interested?
-    subtitle: Feel free to contact us here!
+    subtitle: >-
+      Feel free to contact us here!
+      TODO: Write more about contributing etc.
     actions:
       - label: Contact
         url: 'mailto:info@qskinny.org'
