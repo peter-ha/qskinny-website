@@ -68,6 +68,7 @@ sections:
       - label: Read more
         url: 'https://www.fendt.com/int/tractors/300-vario-highlights'
         style: primary
+        new_window: true
       - label: lorem-ipsum
         url: lorem-ipsum
         style: link
