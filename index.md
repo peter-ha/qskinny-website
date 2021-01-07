@@ -26,17 +26,17 @@ sections:
             style: link
       - title: What is it?
         content: >-
-          QSkinny is written in C++, so its API is similar to QtQWidgets.
-          It is based on the modern Qt graphic stack, so its backend is the same
-          as the one QML uses.
+          QSkinny is written in C++, so its API is similar to QtQWidgets. It is
+          based on the modern Qt graphic stack, so its backend is the same as
+          the one QML uses.
         actions:
           - label: Learn more
             url: /docs
             style: link
       - title: It's free!
         content: >-
-          The QSkinny source code is released under the LGPLv2, and the examples are
-          released under BSD license.
+          The QSkinny source code is released under the LGPLv2, and the examples
+          are released under BSD license.
         actions:
           - label: Learn more
             url: /style-guide
@@ -66,36 +66,38 @@ sections:
     image_position: left
     actions:
       - label: Read more
-        url: https://www.fendt.com/int/tractors/300-vario-highlights
+        url: 'https://www.fendt.com/int/tractors/300-vario-highlights'
         style: primary
+      - label: lorem-ipsum
+        url: lorem-ipsum
+        style: link
+        icon_class: lorem-ipsum
+        new_window: false
+        type: action
   - section_id: features-two-col
     type: section_grid
     title: Presentations
-    #subtitle: An optional subtitle of the section
     col_number: two
     grid_items:
       - title: QSkinny - A new approach for a QtQuick framework
-        content: >-
-          Qt World Summit 2019, Berlin / Germany
+        content: 'Qt World Summit 2019, Berlin / Germany'
         actions:
           - label: Learn More
-            url: https://youtu.be/LflK-xYMnk0
+            url: 'https://youtu.be/LflK-xYMnk0'
             style: link
       - title: Using the Qt Scene Graph from C++ with QSkinny
-        content: >-
-          Qt Day 2019, Florence / Italy
+        content: 'Qt Day 2019, Florence / Italy'
         actions:
           - label: Learn More
-            url: https://youtu.be/cxYss8nmDa4
+            url: 'https://youtu.be/cxYss8nmDa4'
             style: link
   - section_id: text-no-img
     type: section_content
     title: Interested?
-    content: >-
-      Feel free to contact us here!
+    content: Feel free to contact us here!
     actions:
       - label: Contact
-        url: mailto:info@qskinny.org
+        url: 'mailto:info@qskinny.org'
         style: primary
 layout: advanced
 ---
