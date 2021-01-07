@@ -72,7 +72,7 @@ sections:
         url: lorem-ipsum
         style: link
         icon_class: lorem-ipsum
-        new_window: false
+        new_window: true
         type: action
   - section_id: features-two-col
     type: section_grid
