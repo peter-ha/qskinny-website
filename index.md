@@ -90,14 +90,12 @@ sections:
             style: link
   - section_id: text-no-img
     type: section_content
-    title: A Section Without Image
+    title: Interested?
     content: >-
-      Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-      cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
-      consectetur lobortis.
+      Feel free to contact us here!
     actions:
-      - label: Get Started
-        url: /docs/getting-started/installation
+      - label: Contact
+        url: mailto:info@qskinny.org
         style: primary
 layout: advanced
 ---
