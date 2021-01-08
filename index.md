@@ -7,7 +7,7 @@ sections:
     image: images/iot-dashboard-embedded.jpeg
     content: >-
       QSkinny is a UI framework based on the Qt graphic stack and written in
-      C++. It allows users to write their UIs in C++ and/or QML.
+      C++. It allows users to write their UIs in C++ (and QML).
     actions:
       - label: Get it on GitHub
         url: https://github.com/uwerat/qskinny
@@ -18,7 +18,7 @@ sections:
     grid_items:
       - title: Why QSkinny?
         content: >-
-          It's free. It's 100% written in C++. Use QML if and when you want to.
+          It's free. It's 100% written in C++. Using QML on top is possible (but not used widely yet).
           Connect data easily, no language barrier. Flexible layouts.
         actions:
           - label: Learn more
@@ -26,7 +26,7 @@ sections:
             style: link
       - title: What is it?
         content: >-
-          QSkinny is written in C++, so its API is similar to QtQWidgets. It is
+          QSkinny is written in C++, so its API is similar to QtWidgets. It is
           based on the modern Qt graphic stack, so its backend is the same as
           the one QML uses.
         actions:
@@ -61,7 +61,7 @@ sections:
     content: >-
       QSkinny is at the heart of the Fendt 300 Vario tractor UI. It has proven to successfully
       make its way from a research project to a key software component in a mass production
-      vehicle. In the future, the plan is to use QSkinny for more big scale UI projects.
+      vehicle. In the future, the customer is planning to use QSkinny for more big scale UI projects.
     image: images/fendt-tractor-ui.jpeg
     image_position: right
     actions:
