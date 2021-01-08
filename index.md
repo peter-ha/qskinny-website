@@ -84,20 +84,12 @@ sections:
     type: section_cta
     title: Interested?
     subtitle: >-
-      Feel free to contact us here!
-      TODO: Write more about contributing etc.
+      Feel free to contact us about anything ranging from business inquiry to open source contributions.
+      Also, if you are curious about trying out QSkinny for your next project, you are welcome to drop us a mail!
     actions:
       - label: Contact
         url: 'mailto:info@qskinny.org'
         style: primary
         new_window: true
-  - section_id: text-no-img
-    type: section_content
-    title: Interested?
-    content: Feel free to contact us here!
-    actions:
-      - label: Contact
-        url: 'mailto:info@qskinny.org'
-        style: primary
 layout: advanced
 ---
