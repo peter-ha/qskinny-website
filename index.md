@@ -75,10 +75,10 @@ sections:
     col_number: two
     grid_items:
       - title: QSkinny - A new approach for a QtQuick framework
-        content: <p>Qt World Summit 2019, Berlin / Germany</p> <iframe width="240" height="180" src="http://www.youtube.com/embed/LflK-xYMnk0" frameborder="0"> </iframe>
+        content: <p>Qt World Summit 2019, Berlin / Germany</p> <iframe width="240" height="180" src="https://www.youtube.com/embed/LflK-xYMnk0" frameborder="0"> </iframe>
         actions:
       - title: Using the Qt Scene Graph from C++ with QSkinny
-        content: <p>Qt Day 2019, Florence / Italy</p> <iframe width="240" height="180" src="http://www.youtube.com/embed/cxYss8nmDa4" frameborder="0"> </iframe>
+        content: <p>Qt Day 2019, Florence / Italy</p> <iframe width="240" height="180" src="https://www.youtube.com/embed/cxYss8nmDa4" frameborder="0"> </iframe>
         actions:
   - section_id: contact
     type: section_cta
