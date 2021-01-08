@@ -37,14 +37,6 @@ header:
       url: /docs
       style: link
       has_subnav: false
-    - label: Success stories
-      url: /blog
-      style: link
-      has_subnav: false
-    - label: Blog
-      url: '#'
-      style: link
-      has_subnav: false
     - label: GitHub
       url: 'https://github.com/uwerat/qskinny'
       style: primary
