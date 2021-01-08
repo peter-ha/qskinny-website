@@ -10,7 +10,7 @@ sections:
       C++. It allows users to write their UIs in C++ and/or QML.
     actions:
       - label: Get it on GitHub
-        url: /docs
+        url: https://github.com/uwerat/qskinny
         style: primary
   - section_id: features
     type: section_grid
@@ -26,18 +26,17 @@ sections:
             style: link
       - title: What is it?
         content: >-
-          QSkinny is written in C++, so its API is similar to QtQWidgets.
-          It is based on the modern Qt graphic stack, so its backend is the same
-          as the one QML uses.
+          QSkinny is written in C++, so its API is similar to QtQWidgets. It is
+          based on the modern Qt graphic stack, so its backend is the same as
+          the one QML uses.
         actions:
           - label: Learn more
             url: /docs
             style: link
       - title: It's free!
         content: >-
-          The QSkinny source code is released under the LGPLv2, and the examples are
-          released under BSD license. This gives you a lot of freedom to use it in
-          your next project.
+          The QSkinny source code is released under the LGPLv2, and the examples
+          are released under BSD license.
         actions:
           - label: Learn more
             url: /style-guide
@@ -48,59 +47,49 @@ sections:
     image_position: left
     title: Demo
     content: >-
-      We could try to run the code here with WebAssembly somehow? Nam pulvinar
-      ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet cursus quis,
-      fringilla nec sapien. Vestibulum imperdiet nunc bibendum consectetur
-      lobortis.
+      The IOT dashboard example is part of the QSkinny repository and shows a modern UI
+      composed of advanced elements.
+      You are welcome to use it as a starting point for your own project.
     actions:
-      - label: View Demo
-        url: /docs/getting-started
+      - label: Check out the example on Github
+        url: https://github.com/peter-ha/qskinny/tree/iot-dashboard/examples/iot-dashboard
         style: primary
-      - label: Get Started
-        url: /docs/getting-started
-        style: secondary
+        new_window: true
+  - section_id: success_story
+    type: section_content
+    title: Success story
+    content: >-
+      QSkinny is at the heart of the Fendt 300 Vario tractor UI. It has proven to successfully
+      make its way from a research project to a key software component in a mass production
+      vehicle. In the future, the plan is to use QSkinny for more big scale UI projects.
+    image: images/fendt-tractor-ui.jpeg
+    image_position: right
+    actions:
+      - label: Read more from the customer
+        url: 'https://www.fendt.com/int/tractors/300-vario-highlights'
+        style: primary
+        new_window: true
   - section_id: features-two-col
     type: section_grid
-    title: Sample Layouts
-    subtitle: An optional subtitle of the section
+    title: Presentations
     col_number: two
     grid_items:
-      - title: Overview
-        content: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-          ligula, cursus id molestie vel, maximus aliquet risus. Vivamus in nibh
-          fringilla, fringilla tortor at, pulvinar orci.
+      - title: QSkinny - A new approach for a QtQuick framework
+        content: <p>Qt World Summit 2019, Berlin / Germany</p> <iframe width="240" height="180" src="http://www.youtube.com/embed/LflK-xYMnk0" frameborder="0"> </iframe>
         actions:
-          - label: Learn More
-            url: /overview
-            style: link
-      - title: Showcase
-        content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius.
+      - title: Using the Qt Scene Graph from C++ with QSkinny
+        content: <p>Qt Day 2019, Florence / Italy</p> <iframe width="240" height="180" src="http://www.youtube.com/embed/cxYss8nmDa4" frameborder="0"> </iframe>
         actions:
-          - label: Learn More
-            url: /showcase
-            style: link
-  - section_id: cta
+  - section_id: contact
     type: section_cta
-    title: For the impatient
-    subtitle: This is an optional description for the call to action block.
+    title: Interested?
+    subtitle: >-
+      Feel free to contact us about anything ranging from business inquiry to open source contributions.
+      Also, if you are curious about trying out QSkinny for your next project, you are welcome to drop us a mail!
     actions:
-      - label: Get Started
-        url: /docs/getting-started/installation
+      - label: Contact
+        url: 'mailto:info@qskinny.org'
         style: primary
-  - section_id: text-no-img
-    type: section_content
-    title: A Section Without Image
-    content: >-
-      Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-      cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
-      consectetur lobortis.
-    actions:
-      - label: Get Started
-        url: /docs/getting-started/installation
-        style: primary
+        new_window: true
 layout: advanced
 ---
