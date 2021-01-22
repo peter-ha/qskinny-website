@@ -70,6 +70,7 @@ sass:
   precision: 10
 plugins:
   - jekyll-menus
+  - jekyll-asciidoc
 exclude:
   - Gemfile
   - Gemfile.lock
