@@ -1,3 +1,8 @@
+---
+title: Writing your first application
+layout: docs
+---
+
 :doctitle: QSkinny - Writing your first application
 :notitle:
 

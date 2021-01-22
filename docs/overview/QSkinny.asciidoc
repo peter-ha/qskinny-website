@@ -1,3 +1,8 @@
+---
+title: Introduction
+layout: docs
+---
+
 :doctitle: QSkinny - Introduction
 :notitle:
 

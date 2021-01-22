@@ -1,3 +1,8 @@
+---
+title: Skins
+layout: docs
+---
+
 :doctitle: QSkinny - Skins
 :notitle:
 

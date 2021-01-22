@@ -1,3 +1,8 @@
+---
+title: Scene graph representations of controls
+layout: docs
+---
+
 :doctitle: QSkinny - Scene graph representations of controls
 :notitle:
 

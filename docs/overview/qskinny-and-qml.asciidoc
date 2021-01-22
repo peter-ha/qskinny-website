@@ -1,4 +1,9 @@
-:doctitle: QSkinny - Layouts
+---
+title: Using QSkinny and QML
+layout: docs
+---
+
+:doctitle: QSkinny - Using QSkinny and QML
 :notitle:
 
 == QSkinny - Using QSkinny and QML

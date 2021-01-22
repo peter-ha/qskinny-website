@@ -1,3 +1,8 @@
+---
+title: Parents and parent items
+layout: docs
+---
+
 :doctitle: QSkinny - Parents and parent items
 :notitle:
 
