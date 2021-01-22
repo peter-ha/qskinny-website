@@ -1,10 +1,6 @@
 root_docs_path: /docs
 sections:
-  - about
-  - classes
   - getting-started
-  - ui-components
-  - manage-content
-  - tools
-  - faq
-  - community
+  - classes
+  - modules
+  - examples
