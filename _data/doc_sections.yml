@@ -1,6 +1,5 @@
 root_docs_path: /docs
 sections:
-  - getting-started
-  - classes
+  - overview
   - modules
-  - examples
+  - classes
