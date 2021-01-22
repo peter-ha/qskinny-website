@@ -3,7 +3,7 @@ title: Using QSkinny and QML
 layout: docs
 ---
 
-:doctitle: QSkinny - Using QSkinny and QML
+:doctitle: Using QSkinny and QML
 :notitle:
 
 == QSkinny - Using QSkinny and QML
@@ -47,7 +47,7 @@ Qsk.LinearBox
 The full Buttons example is depicted below.
 
 .The buttons example shows how to mix QSkinny and QML
-image::images/buttons-example.png[Buttons example]
+image::../images/buttons-example.png[Buttons example]
 
 For more information on using C++ classes from QML, see the article about exposing attributes of {cpp} types to QML in the
 https://doc.qt.io/qt-5/qtqml-cppintegration-exposecppattributes.html[Qt documentation].

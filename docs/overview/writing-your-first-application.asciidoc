@@ -3,7 +3,7 @@ title: Writing your first application
 layout: docs
 ---
 
-:doctitle: QSkinny - Writing your first application
+:doctitle: Writing your first application
 :notitle:
 
 == Writing your first application
@@ -119,7 +119,7 @@ int main( int argc, char* argv[] )
 
 Now the app is displaying the two buttons:
 
-image::images/writing-first-application.png[An app showing two buttons]
+image::../images/writing-first-application.png[An app showing two buttons]
 
 That's it; you just created a QSkinny application from scratch.
 

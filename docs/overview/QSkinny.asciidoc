@@ -3,7 +3,7 @@ title: Introduction
 layout: docs
 ---
 
-:doctitle: QSkinny - Introduction
+:doctitle: Introduction
 :notitle:
 
 include::table-of-contents.asciidoc[]
@@ -24,7 +24,7 @@ the whole codebase is written in {cpp}. An overview of how QSkinny fits
 into the Qt architecture is depicted below:
 
 .QSkinny sits on top of QtQuick, while QML is optional
-image::images/architecture.png[QSkinny architecture]
+image::../images/architecture.png[QSkinny architecture]
 
 === Why use QSkinny?
 
