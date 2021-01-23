@@ -6,8 +6,6 @@ layout: docs
 :doctitle: 1. Introduction
 :notitle:
 
-include::table-of-contents.asciidoc[]
-
 == Introduction
 
 === What is QSkinny?
