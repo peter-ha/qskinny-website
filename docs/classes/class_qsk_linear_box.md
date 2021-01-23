@@ -98,37 +98,6 @@ Inherits from [QskIndexedLayoutBox](/docs/classes/class_qsk_indexed_layout_box/)
 | int | **[elementCount](/docs/classes/class_qsk_linear_box/#property-elementcount)**  |
 | bool | **[empty](/docs/classes/class_qsk_linear_box/#property-empty)**  |
 
-## Additional inherited members
-
-**Public Signals inherited from [QskIndexedLayoutBox](/docs/classes/class_qsk_indexed_layout_box/)**
-
-|                | Name           |
-| -------------- | -------------- |
-| void | **[autoAddChildrenChanged](/docs/classes/class_qsk_indexed_layout_box/#signal-autoaddchildrenchanged)**() |
-
-**Public Functions inherited from [QskIndexedLayoutBox](/docs/classes/class_qsk_indexed_layout_box/)**
-
-|                | Name           |
-| -------------- | -------------- |
-| | **[QskIndexedLayoutBox](/docs/classes/class_qsk_indexed_layout_box/#function-qskindexedlayoutbox)**(QQuickItem * parent =nullptr)<br>Constructor.  |
-| | **[~QskIndexedLayoutBox](/docs/classes/class_qsk_indexed_layout_box/#function-~qskindexedlayoutbox)**() override<br>Destructor.  |
-| void | **[setAutoAddChildren](/docs/classes/class_qsk_indexed_layout_box/#function-setautoaddchildren)**(bool on =true)<br>En/Disable auto appending of children.  |
-| bool | **[autoAddChildren](/docs/classes/class_qsk_indexed_layout_box/#function-autoaddchildren)**() const |
-
-**Protected Functions inherited from [QskIndexedLayoutBox](/docs/classes/class_qsk_indexed_layout_box/)**
-
-|                | Name           |
-| -------------- | -------------- |
-| void | **[reparentItem](/docs/classes/class_qsk_indexed_layout_box/#function-reparentitem)**(QQuickItem * item) |
-| void | **[unparentItem](/docs/classes/class_qsk_indexed_layout_box/#function-unparentitem)**(QQuickItem * item) |
-
-**Public Properties inherited from [QskIndexedLayoutBox](/docs/classes/class_qsk_indexed_layout_box/)**
-
-|                | Name           |
-| -------------- | -------------- |
-| bool | **[autoAddChildren](/docs/classes/class_qsk_indexed_layout_box/#property-autoaddchildren)** <br>Flag controlling whether to automatically append children to the layout.  |
-
-
 ## Detailed Description
 
 ```cpp
@@ -857,4 +826,4 @@ bool empty;
 
 -------------------------------
 
-Updated on 22 January 2021 at 17:05:49 CET
+Updated on 23 January 2021 at 09:50:34 CET
