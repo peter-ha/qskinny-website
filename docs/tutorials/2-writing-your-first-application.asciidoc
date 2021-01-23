@@ -1,9 +1,9 @@
 ---
-title: Writing your first application
+title: 2. Writing your first application
 layout: docs
 ---
 
-:doctitle: Writing your first application
+:doctitle: 2. Writing your first application
 :notitle:
 
 == Writing your first application

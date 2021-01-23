@@ -1,9 +1,9 @@
 ---
-title: Parents and parent items
+title: 6. Parents and parent items
 layout: docs
 ---
 
-:doctitle: Parents and parent items
+:doctitle: 6. Parents and parent items
 :notitle:
 
 == Parents and parent items

@@ -1,9 +1,9 @@
 ---
-title: Introduction
+title: 1. Introduction
 layout: docs
 ---
 
-:doctitle: Introduction
+:doctitle: 1. Introduction
 :notitle:
 
 include::table-of-contents.asciidoc[]

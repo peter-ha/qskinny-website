@@ -1,9 +1,9 @@
 ---
-title: Writing own controls
+title: 8. Writing own controls
 layout: docs
 ---
 
-:doctitle: Writing own controls
+:doctitle: 8. Writing own controls
 :notitle:
 
 == Writing own controls
