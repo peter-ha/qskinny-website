@@ -59,16 +59,9 @@ sections:
     type: section_content
     title: Success story
     content: >-
-      QSkinny is at the heart of the Fendt 300 Vario tractor UI. It has proven to successfully
+      QSkinny is at the heart of the UI display of an agricultural machine. It has proven to successfully
       make its way from a research project to a key software component in a mass production
       vehicle. In the future, the customer is planning to use QSkinny for more big scale UI projects.
-    image: images/fendt-tractor-ui.jpeg
-    image_position: right
-    actions:
-      - label: Read more from the customer
-        url: 'https://www.fendt.com/int/tractors/300-vario-highlights'
-        style: primary
-        new_window: true
   - section_id: features-two-col
     type: section_grid
     title: Presentations
