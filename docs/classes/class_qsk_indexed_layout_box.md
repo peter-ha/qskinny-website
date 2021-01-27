@@ -11,7 +11,7 @@ layout: docs
 
 
 Base class of layouts with index ordered elements. 
-`#include <QskIndexedLayoutBox.h>`
+`#include [/home/peter/dev/qskinny/src/layouts/QskIndexedLayoutBox.h](<QskIndexedLayoutBox.h>)`
 
 Inherits from QskBox
 
@@ -173,4 +173,4 @@ When autoAddChildren is enabled new children are automatically appended to the l
 
 -------------------------------
 
-Updated on 23 January 2021 at 09:50:34 CET
+Updated on 26 January 2021 at 09:44:54 CET

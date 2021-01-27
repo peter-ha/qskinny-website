@@ -11,7 +11,7 @@ layout: docs
 
 
 Singleton maintaining the global settings of an application using Qsk controls. 
-`#include <QskSetup.h>`
+`#include [/home/peter/dev/qskinny/src/controls/QskSetup.h](<QskSetup.h>)`
 
 Inherits from QObject
 
@@ -246,4 +246,4 @@ void inheritLocale(
 
 -------------------------------
 
-Updated on 23 January 2021 at 09:50:35 CET
+Updated on 26 January 2021 at 09:44:54 CET

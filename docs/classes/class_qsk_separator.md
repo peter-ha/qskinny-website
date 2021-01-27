@@ -13,7 +13,7 @@ layout: docs
 Separates a group of items from adjacent items.  [More...](#detailed-description)
 
 
-`#include <QskSeparator.h>`
+`#include [/home/peter/dev/qskinny/src/controls/QskSeparator.h](<QskSeparator.h>)`
 
 Inherits from [QskControl](/docs/classes/class_qsk_control/), [QskQuickItem](/docs/classes/class_qsk_quick_item/), [QskSkinnable](/docs/classes/class_qsk_skinnable/), QQuickItem
 
@@ -216,4 +216,4 @@ qreal extent;
 
 -------------------------------
 
-Updated on 23 January 2021 at 09:50:35 CET
+Updated on 26 January 2021 at 09:44:54 CET

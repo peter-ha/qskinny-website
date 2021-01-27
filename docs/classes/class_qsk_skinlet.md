@@ -13,7 +13,7 @@ layout: docs
 Describes the rendering interface of a [QskControl](). Change the skinlet to change the appearance of the control using the low-level scene graph API.  [More...](#detailed-description)
 
 
-`#include <QskSkinlet.h>`
+`#include [/home/peter/dev/qskinny/src/controls/QskSkinlet.h](<QskSkinlet.h>)`
 
 Inherited by [QskBoxSkinlet](/docs/classes/class_qsk_box_skinlet/), [QskFocusIndicatorSkinlet](/docs/classes/class_qsk_focus_indicator_skinlet/), [QskGraphicLabelSkinlet](/docs/classes/class_qsk_graphic_label_skinlet/), [QskPageIndicatorSkinlet](/docs/classes/class_qsk_page_indicator_skinlet/), [QskPopupSkinlet](/docs/classes/class_qsk_popup_skinlet/), [QskProgressBarSkinlet](/docs/classes/class_qsk_progress_bar_skinlet/), [QskPushButtonSkinlet](/docs/classes/class_qsk_push_button_skinlet/), [QskScrollViewSkinlet](/docs/classes/class_qsk_scroll_view_skinlet/), [QskSeparatorSkinlet](/docs/classes/class_qsk_separator_skinlet/), [QskSliderSkinlet](/docs/classes/class_qsk_slider_skinlet/), [QskStatusIndicatorSkinlet](/docs/classes/class_qsk_status_indicator_skinlet/), [QskSubWindowAreaSkinlet](/docs/classes/class_qsk_sub_window_area_skinlet/), [QskTabButtonSkinlet](/docs/classes/class_qsk_tab_button_skinlet/), [QskTabViewSkinlet](/docs/classes/class_qsk_tab_view_skinlet/), [QskTextInputSkinlet](/docs/classes/class_qsk_text_input_skinlet/), [QskTextLabelSkinlet](/docs/classes/class_qsk_text_label_skinlet/)
 
@@ -335,4 +335,4 @@ void replaceChildNode(
 
 -------------------------------
 
-Updated on 23 January 2021 at 09:50:35 CET
+Updated on 26 January 2021 at 09:44:54 CET

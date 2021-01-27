@@ -13,7 +13,7 @@ layout: docs
 Layout stringing items in rows and columns.  [More...](#detailed-description)
 
 
-`#include <QskLinearBox.h>`
+`#include [/home/peter/dev/qskinny/src/layouts/QskLinearBox.h](<QskLinearBox.h>)`
 
 Inherits from [QskIndexedLayoutBox](/docs/classes/class_qsk_indexed_layout_box/), QskBox
 
@@ -826,4 +826,4 @@ bool empty;
 
 -------------------------------
 
-Updated on 23 January 2021 at 09:50:34 CET
+Updated on 26 January 2021 at 09:44:54 CET

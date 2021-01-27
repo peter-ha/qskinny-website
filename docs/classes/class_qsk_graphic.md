@@ -13,7 +13,7 @@ layout: docs
 A paint device for scalable graphics.  [More...](#detailed-description)
 
 
-`#include <QskGraphic.h>`
+`#include [/home/peter/dev/qskinny/src/graphic/QskGraphic.h](<QskGraphic.h>)`
 
 Inherits from QPaintDevice
 
@@ -545,4 +545,4 @@ friend class QskGraphicPaintEngine;
 
 -------------------------------
 
-Updated on 23 January 2021 at 09:50:35 CET
+Updated on 26 January 2021 at 09:44:54 CET

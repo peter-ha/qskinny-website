@@ -13,7 +13,7 @@ layout: docs
 Base class of all Qsk controls.  [More...](#detailed-description)
 
 
-`#include <QskControl.h>`
+`#include [/home/peter/dev/qskinny/src/controls/QskControl.h](<QskControl.h>)`
 
 Inherits from [QskQuickItem](/docs/classes/class_qsk_quick_item/), [QskSkinnable](/docs/classes/class_qsk_skinnable/), QQuickItem
 
@@ -1111,4 +1111,4 @@ QSizeF preferredSize;
 
 -------------------------------
 
-Updated on 23 January 2021 at 09:50:35 CET
+Updated on 26 January 2021 at 09:44:54 CET

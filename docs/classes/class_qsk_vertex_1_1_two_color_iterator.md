@@ -41,4 +41,4 @@ inline Color colorAt(
 
 -------------------------------
 
-Updated on 23 January 2021 at 09:50:33 CET
+Updated on 26 January 2021 at 09:44:52 CET
