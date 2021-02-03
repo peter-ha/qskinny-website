@@ -14,9 +14,9 @@ layout: docs
 * QskControl::sizeHint
 * QskLayout
 * QskGridBox
-* [QskLinearBox](/docs/classes/class_qsk_linear_box/)
+* [QskLinearBox](/docs/classes/classQskLinearBox/)
 * QskStackBox 
 
 -------------------------------
 
-Updated on 26 January 2021 at 09:44:55 CET
+Updated on  3 February 2021 at 15:05:48 CET

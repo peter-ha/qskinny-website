@@ -1,0 +1,222 @@
+---
+title: QskSelectionWindow
+layout: docs
+
+---
+
+
+**Module:** **[Dialogs](/docs/modules/group__Dialogs/)**
+
+
+
+Inherits from QskDialogWindow
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[QskSelectionWindow](/docs/classes/classQskSelectionWindow/#function-qskselectionwindow)**(QWindow * parent =nullptr) |
+| | **[~QskSelectionWindow](/docs/classes/classQskSelectionWindow/#function-~qskselectionwindow)**() override |
+| void | **[setInfoTextOptions](/docs/classes/classQskSelectionWindow/#function-setinfotextoptions)**(const QskTextOptions & options) |
+| QskTextOptions | **[infoTextOptions](/docs/classes/classQskSelectionWindow/#function-infotextoptions)**() const |
+| QString | **[infoText](/docs/classes/classQskSelectionWindow/#function-infotext)**() const |
+| Q_INVOKABLE QStringList | **[entries](/docs/classes/classQskSelectionWindow/#function-entries)**() const |
+| Q_INVOKABLE int | **[selectedRow](/docs/classes/classQskSelectionWindow/#function-selectedrow)**() const |
+| Q_INVOKABLE QString | **[selectedEntry](/docs/classes/classQskSelectionWindow/#function-selectedentry)**() const |
+
+## Public Signals
+
+|                | Name           |
+| -------------- | -------------- |
+| void | **[infoTextChanged](/docs/classes/classQskSelectionWindow/#signal-infotextchanged)**(const QString & ) |
+| void | **[infoTextOptionsChanged](/docs/classes/classQskSelectionWindow/#signal-infotextoptionschanged)**(const QskTextOptions & ) |
+| void | **[selectedRowChanged](/docs/classes/classQskSelectionWindow/#signal-selectedrowchanged)**(int ) |
+| void | **[selectedEntryChanged](/docs/classes/classQskSelectionWindow/#signal-selectedentrychanged)**(const QString & ) |
+| void | **[entriesChanged](/docs/classes/classQskSelectionWindow/#signal-entrieschanged)**() |
+
+## Public Slots
+
+|                | Name           |
+| -------------- | -------------- |
+| void | **[setInfoText](/docs/classes/classQskSelectionWindow/#slot-setinfotext)**(const QString & text) |
+| void | **[setEntries](/docs/classes/classQskSelectionWindow/#slot-setentries)**(const QStringList & entries) |
+| void | **[setSelectedRow](/docs/classes/classQskSelectionWindow/#slot-setselectedrow)**(int row) |
+
+## Public Properties
+
+|                | Name           |
+| -------------- | -------------- |
+| QString | **[infoText](/docs/classes/classQskSelectionWindow/#property-infotext)**  |
+| QskTextOptions | **[infoTextOptions](/docs/classes/classQskSelectionWindow/#property-infotextoptions)**  |
+| QStringList | **[entries](/docs/classes/classQskSelectionWindow/#property-entries)**  |
+| int | **[selectedRow](/docs/classes/classQskSelectionWindow/#property-selectedrow)**  |
+
+## Public Functions Documentation
+
+### function QskSelectionWindow
+
+```cpp
+QskSelectionWindow(
+    QWindow * parent =nullptr
+)
+```
+
+
+### function ~QskSelectionWindow
+
+```cpp
+~QskSelectionWindow() override
+```
+
+
+### function setInfoTextOptions
+
+```cpp
+void setInfoTextOptions(
+    const QskTextOptions & options
+)
+```
+
+
+### function infoTextOptions
+
+```cpp
+QskTextOptions infoTextOptions() const
+```
+
+
+### function infoText
+
+```cpp
+QString infoText() const
+```
+
+
+### function entries
+
+```cpp
+Q_INVOKABLE QStringList entries() const
+```
+
+
+### function selectedRow
+
+```cpp
+Q_INVOKABLE int selectedRow() const
+```
+
+
+### function selectedEntry
+
+```cpp
+Q_INVOKABLE QString selectedEntry() const
+```
+
+
+## Public Signals Documentation
+
+### signal infoTextChanged
+
+```cpp
+void infoTextChanged(
+    const QString & 
+)
+```
+
+
+### signal infoTextOptionsChanged
+
+```cpp
+void infoTextOptionsChanged(
+    const QskTextOptions & 
+)
+```
+
+
+### signal selectedRowChanged
+
+```cpp
+void selectedRowChanged(
+    int 
+)
+```
+
+
+### signal selectedEntryChanged
+
+```cpp
+void selectedEntryChanged(
+    const QString & 
+)
+```
+
+
+### signal entriesChanged
+
+```cpp
+void entriesChanged()
+```
+
+
+## Public Slots Documentation
+
+### slot setInfoText
+
+```cpp
+void setInfoText(
+    const QString & text
+)
+```
+
+
+### slot setEntries
+
+```cpp
+void setEntries(
+    const QStringList & entries
+)
+```
+
+
+### slot setSelectedRow
+
+```cpp
+void setSelectedRow(
+    int row
+)
+```
+
+
+## Public Property Documentation
+
+### property infoText
+
+```cpp
+QString infoText;
+```
+
+
+### property infoTextOptions
+
+```cpp
+QskTextOptions infoTextOptions;
+```
+
+
+### property entries
+
+```cpp
+QStringList entries;
+```
+
+
+### property selectedRow
+
+```cpp
+int selectedRow;
+```
+
+
+-------------------------------
+
+Updated on  3 February 2021 at 15:05:43 CET

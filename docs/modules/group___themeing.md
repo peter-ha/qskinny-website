@@ -9,7 +9,6 @@ layout: docs
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[QskAspect](/docs/classes/class_qsk_aspect/)**  |
 | class | **[QskBoxBorderColors](/docs/classes/class_qsk_box_border_colors/)**  |
 | class | **[QskBoxBorderMetrics](/docs/classes/class_qsk_box_border_metrics/)**  |
 | class | **[QskBoxShapeMetrics](/docs/classes/class_qsk_box_shape_metrics/)**  |
@@ -29,6 +28,12 @@ layout: docs
 
 
 
+
+
+
+
+
+
 -------------------------------
 
-Updated on 26 January 2021 at 09:44:54 CET
+Updated on  3 February 2021 at 10:30:49 CET

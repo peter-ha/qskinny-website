@@ -64,4 +64,4 @@ QSkinny 0.0.1 might be source code compatible in all environments where you find
 
 -------------------------------
 
-Updated on 26 January 2021 at 09:44:55 CET
+Updated on  3 February 2021 at 15:05:48 CET

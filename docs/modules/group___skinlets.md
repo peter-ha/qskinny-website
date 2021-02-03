@@ -15,7 +15,6 @@ layout: docs
 | class | **[QskListViewSkinlet](/docs/classes/class_qsk_list_view_skinlet/)**  |
 | class | **[QskPageIndicatorSkinlet](/docs/classes/class_qsk_page_indicator_skinlet/)**  |
 | class | **[QskPopupSkinlet](/docs/classes/class_qsk_popup_skinlet/)**  |
-| class | **[QskProgressBarSkinlet](/docs/classes/class_qsk_progress_bar_skinlet/)**  |
 | class | **[QskPushButtonSkinlet](/docs/classes/class_qsk_push_button_skinlet/)**  |
 | class | **[QskScrollViewSkinlet](/docs/classes/class_qsk_scroll_view_skinlet/)**  |
 | class | **[QskSeparatorSkinlet](/docs/classes/class_qsk_separator_skinlet/)**  |
@@ -34,6 +33,12 @@ layout: docs
 
 
 
+
+
+
+
+
+
 -------------------------------
 
-Updated on 26 January 2021 at 09:44:54 CET
+Updated on  3 February 2021 at 10:30:47 CET

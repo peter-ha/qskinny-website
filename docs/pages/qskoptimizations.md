@@ -14,26 +14,26 @@ Fewer QObjects leads to less memory consumption, generally fewer memory allocati
 Scene graph timing optimizations
 
 
-The Qt Quick framework has a tendency to perform some operations too soon and too often, possibly leading to negative effects on performance or memory consumption. As some of these behaviors can be deferred at runtime, [QskControl](/docs/classes/class_qsk_control/) exposes a number of [flags](/docs/classes/class_qsk_quick_item/#enum-flag) (enabled by default) to avoid these issues.
+The Qt Quick framework has a tendency to perform some operations too soon and too often, possibly leading to negative effects on performance or memory consumption. As some of these behaviors can be deferred at runtime, [QskControl](/docs/classes/classQskControl/) exposes a number of [flags](/docs/classes/classQskQuickItem/#enum-flag) (enabled by default) to avoid these issues.
 
 More specifically, the following observations and associated actions have been made:
 
 Delaying node creation
 
-When calling QQuickItem::update(), the scene graph schedules a call to QQuickItem::updatePaintNode(), regardless of whether the item is visible. Naïve implementations tend to always update the node, resulting in possibly extra work (especially at start-up time). QSkinny defers the creation of this paint node by blocking the subsequent call to [QskSkinnable::updateNode](/docs/classes/class_qsk_skinnable/#function-updatenode) unless the item is visible. The behavior can be disabled via QskControl::DeferredUpdate.
+When calling QQuickItem::update(), the scene graph schedules a call to QQuickItem::updatePaintNode(), regardless of whether the item is visible. Naïve implementations tend to always update the node, resulting in possibly extra work (especially at start-up time). QSkinny defers the creation of this paint node by blocking the subsequent call to QskSkinnable::updateNode unless the item is visible. The behavior can be disabled via [QskControl::DeferredUpdate](/docs/classes/classQskQuickItem/#enumvalue-deferredupdate).
 
 Deferring polish
 
-Similar to deferred updates (see above), calls to QQuickItem::polish are deferred until the item is visible and its geometry is known. The behavior is controlled by QskControl::DeferredPolish.
+Similar to deferred updates (see above), calls to QQuickItem::polish are deferred until the item is visible and its geometry is known. The behavior is controlled by [QskControl::DeferredPolish](/docs/classes/classQskQuickItem/#enumvalue-deferredpolish).
 
 Deferring unnecessary re-layout
 
-By default, the implicit approach to layouts found in QML can generate superfluous changes to the geometry of an item, especially during application start-up. The QskControl::DeferredLayout flag attempts to block most of these changes. When using QSkinny layouts, it is recommended to leave this flag enabled, but it may be necessary to disable it when working with standard QML layouts.
+By default, the implicit approach to layouts found in QML can generate superfluous changes to the geometry of an item, especially during application start-up. The [QskControl::DeferredLayout](/docs/classes/classQskQuickItem/#enumvalue-deferredlayout) flag attempts to block most of these changes. When using QSkinny layouts, it is recommended to leave this flag enabled, but it may be necessary to disable it when working with standard QML layouts.
 
 Deleting invisible nodes
 
-The default scene graph does not implicitly delete nodes which become invisible. As this might result in a useful memory savings, QSkinny deletes, by default, nodes belonging to items which have been made invisible. To change this behavior, disable the QskControl::CleanupOnVisibility flag. 
+The default scene graph does not implicitly delete nodes which become invisible. As this might result in a useful memory savings, QSkinny deletes, by default, nodes belonging to items which have been made invisible. To change this behavior, disable the [QskControl::CleanupOnVisibility](/docs/classes/classQskQuickItem/#enumvalue-cleanuponvisibility) flag. 
 
 -------------------------------
 
-Updated on 26 January 2021 at 09:44:55 CET
+Updated on  3 February 2021 at 15:05:48 CET
