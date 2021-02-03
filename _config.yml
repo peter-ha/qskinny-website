@@ -10,7 +10,7 @@ palette: blue
 palettes:
   blue:
     sass:
-      accent1: '#00c6ff'
+      accent1: '#0093ff'
       accent2: '#0072ff'
   green:
     sass:
