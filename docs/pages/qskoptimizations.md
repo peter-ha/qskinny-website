@@ -20,7 +20,7 @@ More specifically, the following observations and associated actions have been m
 
 Delaying node creation
 
-When calling QQuickItem::update(), the scene graph schedules a call to QQuickItem::updatePaintNode(), regardless of whether the item is visible. Naïve implementations tend to always update the node, resulting in possibly extra work (especially at start-up time). QSkinny defers the creation of this paint node by blocking the subsequent call to QskSkinnable::updateNode unless the item is visible. The behavior can be disabled via [QskControl::DeferredUpdate](/docs/classes/classQskQuickItem/#enumvalue-deferredupdate).
+When calling QQuickItem::update(), the scene graph schedules a call to QQuickItem::updatePaintNode(), regardless of whether the item is visible. Naïve implementations tend to always update the node, resulting in possibly extra work (especially at start-up time). QSkinny defers the creation of this paint node by blocking the subsequent call to [QskSkinnable::updateNode](/docs/classes/classQskSkinnable/#function-updatenode) unless the item is visible. The behavior can be disabled via [QskControl::DeferredUpdate](/docs/classes/classQskQuickItem/#enumvalue-deferredupdate).
 
 Deferring polish
 
@@ -36,4 +36,4 @@ The default scene graph does not implicitly delete nodes which become invisible.
 
 -------------------------------
 
-Updated on  3 February 2021 at 15:05:48 CET
+Updated on 10 February 2021 at 09:41:53 CET

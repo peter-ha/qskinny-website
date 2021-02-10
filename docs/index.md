@@ -11,6 +11,10 @@ The (Q)Skinny library contains a set of lightweight Qt Quick Controls. It is imp
 
 The framework separates concerns between the API and logic of the controls themselves, the styling of these controls, and the delegated rendering of the controls to the screen.
 
+```cpp
+    void predictionReset();
+    void predictionRequested( const QString& text );
+```
 
 digraph skinny {
   table [ shape=record, label="{
@@ -64,4 +68,4 @@ QSkinny 0.0.1 might be source code compatible in all environments where you find
 
 -------------------------------
 
-Updated on  3 February 2021 at 15:05:48 CET
+Updated on 10 February 2021 at 09:41:53 CET
