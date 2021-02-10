@@ -71,6 +71,8 @@ sass:
 plugins:
   - jekyll-menus
   - jekyll-asciidoc
+markdown: kramdown
+highlighter: rouge
 exclude:
   - Gemfile
   - Gemfile.lock
