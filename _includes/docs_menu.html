@@ -3,10 +3,14 @@
 {% assign root_docs_path = site.data.doc_sections.root_docs_path %}
 {% assign root_page = root_docs_path | get_page %}
 
-<nav id="docs-nav" class="docs-nav">
+<nav id="docs-nav" class="docs-nav" style="z-index: 1000">
   <div id="docs-nav-inside" class="docs-nav-inside sticky">
     <button id="docs-nav-toggle" class="docs-nav-toggle">Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span></button>
     <div class="docs-nav-menu">
+      <input type="text" id="search-field" name="search-input" placeholder="Search for classes..." data-action="search-open" data-target="#search">
+      <div class="search-results" style="visibility: hidden; background-color: #ffffff; width: 220px; position: absolute; z-index: 1000; padding: 20px; box-shadow: 1px 1px 5px grey; margin-top: 4px">
+                    <!-- Search results will be inserted here -->
+      </div><br />
       <ul id="docs-menu" class="docs-menu">
         <li class="docs-menu-item{% if page.url == root_page.url %} current{% endif %}">
           <a href="{{ root_page.url | relative_url }}">{{ root_page.title }}</a>
