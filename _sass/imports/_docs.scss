@@ -16,7 +16,8 @@
 
 .qskinny-outter-block {
   background-color: _palette(bg);
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .qskinny-inner-block {
@@ -24,9 +25,45 @@
   padding-right: 20px;
 }
 
+.qskinny-subcontrol {
+  background-color: #e7717d;
+  color: white;
+  padding: 10px;
+}
+
+.qskinny-state {
+  background-color: #3c1874;
+  color: white;
+  padding: 10px;
+}
+
+.qskinny-type {
+  background-color: #283747;
+  color: white;
+  padding: 10px;
+}
+
 .qskinny-function {
   background-color: _palette(accent);
   opacity: 0.6;
+  color: white;
+  padding: 10px;
+}
+
+.qskinny-signal {
+  background-color: #fc4a1a;
+  color: white;
+  padding: 10px;
+}
+
+.qskinny-slot {
+  background-color: #4abdac;
+  color: white;
+  padding: 10px;
+}
+
+.qskinny-property {
+  background-color: #a239ca;
   color: white;
   padding: 10px;
 }

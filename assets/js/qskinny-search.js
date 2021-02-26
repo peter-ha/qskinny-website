@@ -175,6 +175,6 @@ $(document).ready(function() {
 $('#search-field').on('select2:select', function (e) {
     var selected = $('#search-field').select2('data');
     if(selected.length === 1) {
-        window.location.href = "../class" + selected[0].text;
+        window.location.href = "/docs/classes/class" + selected[0].text;
     }
 });
