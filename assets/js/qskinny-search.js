@@ -169,6 +169,7 @@ $(document).ready(function() {
         data: posts
       });
     $('#search-field').val(null).trigger('change'); // reset
+//    $('#search-field').css('.select2-results { background-color: #ff0000; }');
 });
 
 $('#search-field').on('select2:select', function (e) {

@@ -5,6 +5,15 @@
   padding-top: 2.5em;
 }
 
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: _palette(accent) !important;
+}
+
+.select2-container--default .select2-selection--single:focus {
+  border: 1px solid _palette(accent) !important;
+  outline: 1px !important;
+}
+
 .post.type-docs {
   margin-bottom: 5.625em;
   max-width: 800px;
@@ -280,7 +289,7 @@
 
   .docs-nav {
     padding-right: 1.5em;
-    width: 12.5em;
+    width: 14.5em;
   }
 
   .page-nav {
