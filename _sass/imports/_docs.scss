@@ -14,6 +14,23 @@
   outline: 1px !important;
 }
 
+.qskinny-outter-block {
+  background-color: _palette(bg);
+  margin-bottom: 40px;
+}
+
+.qskinny-inner-block {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.qskinny-function {
+  background-color: _palette(accent);
+  opacity: 0.6;
+  color: white;
+  padding: 10px;
+}
+
 .post.type-docs {
   margin-bottom: 5.625em;
   max-width: 800px;
