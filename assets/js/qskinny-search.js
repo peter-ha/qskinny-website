@@ -158,15 +158,22 @@ $(document).on("keyup", function (e) {
         var $inputField = $("#search-field");
         if(!$inputField.is(":focus")) {
             e.preventDefault();
-            $inputField.focus();
+            $inputField.select2('open');
         }
     }
 });
 
 $(document).ready(function() {
-    console.log("ready");
     $("#search-field").select2({
         placeholder: "Search for classes...",
         data: posts
       });
+    $('#search-field').val(null).trigger('change'); // reset
+});
+
+$('#search-field').on('select2:select', function (e) {
+    var selected = $('#search-field').select2('data');
+    if(selected.length === 1) {
+        window.location.href = "../class" + selected[0].text;
+    }
 });
