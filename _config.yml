@@ -72,9 +72,12 @@ plugins:
   - jekyll-menus
   - jekyll-asciidoc
 markdown: kramdown
+markdown: kramdown
 kramdown:
-  syntax_highlighter: rouge
-highlighter: rouge
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
 exclude:
   - Gemfile
   - Gemfile.lock
