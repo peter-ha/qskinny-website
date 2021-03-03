@@ -189,10 +189,3 @@ topBar->deleteLater();
 
 .Reparenting the label will keep it alive when deleting the top bar
 image::../images/nesting-layouts-item-tree-4.png[Reparenting the item]
-
-'''''
-
-[cols="<,^,>",frame=none,grid=none]
-|=======================================================================
-|link:scalable-graphics.html[< Previous: (Scalable) graphics] |link:QSkinny.html[Home] |link:qskinny-and-qml.html[Next: Using QSkinny and QML >]
-|=======================================================================

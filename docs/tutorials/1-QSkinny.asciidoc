@@ -34,9 +34,3 @@ Choosing between QSkinny and QML is not an either/or decision, they can
 be mixed and matched. E.g. when writing a UI, some core components could
 be written in {cpp} and QSkinny, and some higher level components in QML.
 
-'''''
-
-[cols="<,^,>",frame=none,grid=none]
-|=================================================
-| | link:QSkinny.html[Home] |link:writing-your-first-application.html[Next: Writing your first application >]
-|=================================================

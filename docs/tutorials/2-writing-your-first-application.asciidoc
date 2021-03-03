@@ -124,8 +124,3 @@ image::../images/writing-first-application.png[An app showing two buttons]
 That's it; you just created a QSkinny application from scratch.
 
 For information on how the controls and layouts above behave, see the next chapters.
-
-[cols="<,^,>",frame=none,grid=none]
-|=================================================
-|link:QSkinny.html[< Previous: Introduction] | link:QSkinny.html[Home] |link:Layouts.html[Next: Layouts >]
-|=================================================

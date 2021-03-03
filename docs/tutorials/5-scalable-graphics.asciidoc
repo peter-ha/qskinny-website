@@ -60,9 +60,3 @@ QskGraphic graphic = QskGraphic::fromImage( image );
 ...
 ....
 
-'''''
-
-[cols="<,^,>",frame=none,grid=none]
-|=======================================================================
-|link:Skins.html[< Previous: Skins] |link:QSkinny.html[Home] |link:parents-and-parent-items.html[Next: Parents and parent items >]
-|=======================================================================

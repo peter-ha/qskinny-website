@@ -312,10 +312,3 @@ colors etc. can be written with less code.
 
 .A class with an own skinlet
 image::../images/control-with-skinlet.png[Control with skinlet]
-
-'''''
-
-[cols="<,^,>",frame=none,grid=none]
-|=======================================================================
-|link:qskinny-and-qml.html[< Previous: Using QSkinny and QML] |link:QSkinny.html[Home] |link:scene-graph.html[Next: Scene graph representations of controls >]
-|=======================================================================

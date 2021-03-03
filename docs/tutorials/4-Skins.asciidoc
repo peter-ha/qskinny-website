@@ -303,9 +303,3 @@ image::../images/skin-hints-states-1.png[button in normal state]
 .button in `OtherSkin`
 image::../images/skin-factory.png[Styling controls]
 
-'''''
-
-[cols="<,^,>",frame=none,grid=none]
-|=======================================================================
-|link:Layouts.html[< Previous: Layouts] |link:QSkinny.html[Home] |link:scalable-graphics.html[Next: (Scalable) graphics >]
-|=======================================================================

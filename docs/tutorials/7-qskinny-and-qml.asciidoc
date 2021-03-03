@@ -51,10 +51,3 @@ image::../images/buttons-example.png[Buttons example]
 
 For more information on using C++ classes from QML, see the article about exposing attributes of {cpp} types to QML in the
 https://doc.qt.io/qt-5/qtqml-cppintegration-exposecppattributes.html[Qt documentation].
-
-'''''
-
-[cols="<,^,>",frame=none,grid=none]
-|=======================================================================
-|link:parents-and-parent-items.html[< Previous: Parents and parent items] |link:QSkinny.html[Home] |link:writing-own-controls.html[Next: Writing own controls >]
-|=======================================================================

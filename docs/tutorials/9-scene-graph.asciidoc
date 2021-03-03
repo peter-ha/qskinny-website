@@ -72,10 +72,3 @@ In a more complicated UI with multiple elements and more advanced
 layouts, the number of scene graph nodes can be quite high. This is why
 QSkinny tries to create as little nodes as possible and reuse as many as
 it can.
-
-'''''
-
-[cols="<,^,>",frame=none,grid=none]
-|=======================================================================
-|link:writing-own-controls.html[< Previous: Writing own controls] |link:QSkinny.html[Home] |
-|=======================================================================

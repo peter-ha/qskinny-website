@@ -434,9 +434,3 @@ image::../images/nesting-layouts-architecture.png[Nested layouts architecture]
 
 TODO
 
-'''''
-
-[cols="<,^,>",frame=none,grid=none]
-|=======================================================================
-|link:writing-your-first-application.html[< Previous: Writing your first application] |link:QSkinny.html[Home] | link:Skins.html[Next: Skins >]
-|=======================================================================
