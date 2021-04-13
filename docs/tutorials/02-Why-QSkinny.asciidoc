@@ -1,0 +1,11 @@
+---
+title: 2. Why QSkinny?
+layout: docs
+---
+
+:doctitle: 2. Why QSkinny?
+:notitle:
+
+== Why QSkinny?
+
+bla bla
