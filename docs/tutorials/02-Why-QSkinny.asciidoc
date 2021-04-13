@@ -6,6 +6,82 @@ layout: docs
 :doctitle: 2. Why QSkinny?
 :notitle:
 
-== Why QSkinny?
+The typical questions about QSkinny are: Why was QSkinny created? And why would
+somebody use QSkinny and not QML?
 
-bla bla
+Which technology to use always depends on the specific use case. However,
+QSkinny does have some advantages, which are listed below.
+
+== 1. It's C++
+
+QSkinny is written in C++, so there is no new syntax or programming paradigm
+to learn as is the case with QML. Of course QSkinny has concepts that
+new programmers need to become familiar with, but they should be understandable
+for programmers familiar with C++. Especially programmers experienced with
+QtWidgets should feel comfortable with QSkinny.
+
+==== Integration with other build systems / IDEs
+
+While QtCreator is the natural choice of an IDE for Qt programmers,
+some people prefer other IDEs, e.g. Visual
+Studio (Code), Eclipse, CLion etc. Such IDEs usually don't have language support
+for QML like type completion etc. So when using QML you are bound to either
+using QtCreator, or use another IDE and live with the fact that the IDE will not
+understand QML.
+
+When it comes to build systems, some QML tools might be hard to integrate, e.g. the
+QML compiler, qmlplugindump, qmltestrunner and so on. E.g. in Visual Studio projects
+it is hard to invoke the QML compiler through the build system.
+
+With QSkinny being written completely in C++, it can be used with any IDE and
+should integrate nicely with other build systems. QSkinny is using Qt-specific
+concepts like signals and slots and the Meta Object Compiler (`moc`) though.
+
+==== Use C++ tooling for your whole codebase
+
+As C++ is a popular programming language that has been around for decades, there
+are lots of companies and people contributing to the language.
+
+C++ also has extensive tooling that assists with writing code, for instance:
+
+- gdb and other debuggers
+- valgrind
+- address sanitizer and other sanitizers
+- static code analysis tools
+- code coverage tools (e.g. gcov)
+- auto test frameworks
+- (a lot more, e.g. from clang tools)
+
+These tools above will help with finding and fixing bugs, or even better,
+avoiding them in the first place.
+E.g. the compiler will warn about potential problems at compile time,
+and even suggest an automatic fix for it.
+A CI sytem could constantly check whether compilation succeeds and auto tests
+are still passing, and a manual build of the codebase with address sanitizer
+can suggest problems like memory leaks.
+
+QML does have some tooling, but its feature set is nowhere near the support of C++.
+
+E.g. QtCreator will let you know about potential problems in your code while you type,
+e.g. "unused variable", "calling a virtual method from the constructor of a class" etc.,
+and it might even suggest an automatic fix for it.
+
+When writing your whole codebase in C++ with QSkinny, the tooling can be used for the whole
+codebase, so also UI code can be debugged, or auto tested for a CI system etc.
+
+
+== 2. Easy data binding
+
+boiler plate code / example / possibility to use QML on top?
+QML plugins
+
+
+== Layouts / Styling
+
+Also, in contrast to Qt Quick Controls 2, QSkinny allows styling also for own
+controls.
+
+
+== 3. Performance
+
+-> see also QQC2
