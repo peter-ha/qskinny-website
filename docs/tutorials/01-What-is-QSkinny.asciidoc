@@ -6,8 +6,6 @@ layout: docs
 :doctitle: 1. What is QSkinny?
 :notitle:
 
-== What is QSkinny?
-
 QSkinny is a UI framework based on the Qt graphic stack and written in
 {cpp}. It allows users to write their UIs in {cpp} and/or QML.
 
@@ -20,15 +18,4 @@ the whole codebase is written in {cpp}. An overview of how QSkinny fits
 into the Qt architecture is depicted below:
 
 .QSkinny sits on top of QtQuick, while QML is optional
-image::../images/architecture.png[QSkinny architecture]
-
-=== Why use QSkinny?
-
-Writing an UI in {cpp} brings all the benefits of the language,
-e.g. tooling like valgrind and address sanitizer. In addition, there is
-advanced layouting and theming support.
-
-Choosing between QSkinny and QML is not an either/or decision, they can
-be mixed and matched. E.g. when writing a UI, some core components could
-be written in {cpp} and QSkinny, and some higher level components in QML.
-
+image::../images/architecture-simple.png[QSkinny architecture]
