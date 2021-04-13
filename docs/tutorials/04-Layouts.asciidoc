@@ -1,9 +1,9 @@
 ---
-title: 3. Layouts
+title: 4. Layouts
 layout: docs
 ---
 
-:doctitle: 3. Layouts
+:doctitle: 4. Layouts
 :notitle:
 
 == Layouts

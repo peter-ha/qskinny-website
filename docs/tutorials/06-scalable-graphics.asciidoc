@@ -1,9 +1,9 @@
 ---
-title: 5. (Scalable) graphics
+title: 6. (Scalable) graphics
 layout: docs
 ---
 
-:doctitle: 5. (Scalable) graphics
+:doctitle: 6. (Scalable) graphics
 :notitle:
 
 == (Scalable) graphics

@@ -1,9 +1,9 @@
 ---
-title: 4. Skins
+title: 5. Skins
 layout: docs
 ---
 
-:doctitle: 4. Skins
+:doctitle: 5. Skins
 :notitle:
 
 == Skins, Skin hints and Skinlets
