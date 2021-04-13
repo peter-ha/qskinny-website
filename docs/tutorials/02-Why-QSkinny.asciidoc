@@ -39,10 +39,7 @@ concepts like signals and slots and the Meta Object Compiler (`moc`) though.
 
 ==== Use C++ tooling for your whole codebase
 
-As C++ is a popular programming language that has been around for decades, there
-are lots of companies and people contributing to the language.
-
-C++ also has extensive tooling that assists with writing code, for instance:
+C++ has extensive tooling that assists with writing code, for instance:
 
 - gdb and other debuggers
 - valgrind
@@ -52,19 +49,11 @@ C++ also has extensive tooling that assists with writing code, for instance:
 - auto test frameworks
 - (a lot more, e.g. from clang tools)
 
-These tools above will help with finding and fixing bugs, or even better,
-avoiding them in the first place.
-E.g. the compiler will warn about potential problems at compile time,
-and even suggest an automatic fix for it.
-A CI sytem could constantly check whether compilation succeeds and auto tests
-are still passing, and a manual build of the codebase with address sanitizer
-can suggest problems like memory leaks.
-
-QML does have some tooling, but its feature set is nowhere near the support of C++.
-
 E.g. QtCreator will let you know about potential problems in your code while you type,
 e.g. "unused variable", "calling a virtual method from the constructor of a class" etc.,
 and it might even suggest an automatic fix for it.
+
+QML does have some tooling, but its feature set is nowhere near the support of C++.
 
 When writing your whole codebase in C++ with QSkinny, the tooling can be used for the whole
 codebase, so also UI code can be debugged, or auto tested for a CI system etc.
