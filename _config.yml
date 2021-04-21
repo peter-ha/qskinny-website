@@ -41,6 +41,7 @@ header:
       url: 'https://github.com/uwerat/qskinny'
       style: primary
       has_subnav: false
+      new_window: true
 footer:
   content: >-
     &copy; Stackbit. All rights reserved. This Jamstack site was created on <a
