@@ -34,7 +34,7 @@ header:
       style: link
       has_subnav: false
     - label: Documentation
-      url: /docs
+      url: /docs/tutorials/01-What-is-QSkinny/
       style: link
       has_subnav: false
     - label: GitHub
