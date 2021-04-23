@@ -44,24 +44,11 @@ header:
       new_window: true
 footer:
   content: >-
-    &copy; Stackbit. All rights reserved. This Jamstack site was created on <a
-    href="https://www.stackbit.com" target="_blank" rel="noopener">Stackbit</a>.
-    Get yours <a href="https://app.stackbit.com/create?theme=libris"
-    target="_blank" rel="noopener">here</a>.
+    &copy; The QSkinny project. All rights reserved.
   has_social: true
   social_links:
-    - label: Twitter
-      url: 'https://twitter.com/'
-      style: icon
-      icon_class: fa-twitter
-      new_window: true
-    - label: LinkedIn
-      url: 'https://www.linkedin.com/'
-      style: icon
-      icon_class: fa-linkedin
-      new_window: true
     - label: GitHub
-      url: 'https://github.com/'
+      url: 'https://github.com/uwerat/qskinny'
       style: icon
       icon_class: fa-github
       new_window: true
