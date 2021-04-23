@@ -12,6 +12,7 @@ sections:
       - label: Get it on GitHub
         url: https://github.com/uwerat/qskinny
         style: primary
+        new_window: true
   - section_id: features
     type: section_grid
     col_number: three
