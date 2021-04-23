@@ -23,7 +23,7 @@ sections:
           Connect data easily, no language barrier. Flexible layouts.
         actions:
           - label: Learn more
-            url: /docs
+            url: /docs/tutorials/02-Why-QSkinny/
             style: link
       - title: What is it?
         content: >-
@@ -32,16 +32,12 @@ sections:
           the one QML uses.
         actions:
           - label: Learn more
-            url: /docs
+            url: /docs/tutorials/01-What-is-QSkinny/
             style: link
       - title: It's free!
         content: >-
           The QSkinny source code is released under the LGPLv2, and the examples
           are released under BSD license.
-        actions:
-          - label: Learn more
-            url: /style-guide
-            style: link
   - section_id: text-img
     type: section_content
     image: images/iot-dashboard.png
