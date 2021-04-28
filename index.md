@@ -49,7 +49,7 @@ sections:
       You are welcome to use it as a starting point for your own project.
     actions:
       - label: Check out the example on Github
-        url: https://github.com/peter-ha/qskinny/tree/iot-dashboard/examples/iot-dashboard
+        url: https://github.com/uwerat/qskinny/tree/master/examples/iot-dashboard
         style: primary
         new_window: true
   - section_id: success_story
