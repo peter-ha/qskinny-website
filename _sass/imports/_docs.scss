@@ -227,7 +227,7 @@
 .docs-submenu-div {
   overflow-x: hidden;
   overflow-y: auto;
-  max-height: 300px;
+  max-height: calc(100vh - 400px);
 }
 .docs-submenu-div::-webkit-scrollbar {
   width: 2px;
