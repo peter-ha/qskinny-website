@@ -36,8 +36,7 @@ sections:
             style: link
       - title: It's free!
         content: >-
-          The QSkinny source code is released under the LGPLv2, and the examples
-          are released under BSD license.
+          The QSkinny source code is released under the BSD-3-Clause license.
   - section_id: text-img
     type: section_content
     image: images/iot-dashboard.png
