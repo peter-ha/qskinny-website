@@ -37,20 +37,18 @@ sections:
       - title: It's free!
         content: >-
           The QSkinny source code is released under the BSD-3-Clause license.
-  - section_id: text-img
-    type: section_content
-    image: images/iot-dashboard.png
-    image_position: left
+  - section_id: wasm
+    type: section_wasm
     title: Demo
     content: >-
       The IOT dashboard example is part of the QSkinny repository and shows a modern UI
       composed of advanced elements.
       You are welcome to use it as a starting point for your own project.
+      Try the demo right here in the browser, compiled with Qt for WebAssembly.
     actions:
-      - label: Check out the example on Github
-        url: https://github.com/uwerat/qskinny/tree/master/examples/iot-dashboard
+      - label: Start the browser demo
+        url: 'javascript:init()'
         style: primary
-        new_window: true
   - section_id: success_story
     type: section_content
     title: Success story
