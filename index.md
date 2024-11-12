@@ -51,9 +51,10 @@ sections:
         style: primary
   - section_id: success_story
     type: section_content
-    title: Success story
+    title: Fendt Success story
     content: >-
-      QSkinny is at the heart of the UI display of an agricultural machine. It has proven to successfully
+      <iframe width="240" height="180" src="https://www.youtube.com/embed/x64_rw78N6Y" frameborder="0"> </iframe>
+      QSkinny is at the heart of the UI of the newest generation of Fendt tractors. It has proven to successfully
       make its way from a research project to a key software component in a mass production
       vehicle. In the future, the customer is planning to use QSkinny for more big scale UI projects.
   - section_id: features-two-col
