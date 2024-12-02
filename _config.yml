@@ -33,15 +33,10 @@ header:
       url: /
       style: link
       has_subnav: false
-    - label: Tutorials
-      url: /docs/tutorials/01-What-is-QSkinny/
+    - label: Documentation
+      url: /docs/html/
       style: link
       has_subnav: false
-    - label: API documentation
-      url: /docs/api/html/
-      style: link
-      has_subnav: false
-      new_window: true
     - label: GitHub
       url: 'https://github.com/uwerat/qskinny'
       style: primary
