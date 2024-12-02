@@ -3,8 +3,8 @@ var searchData=
   ['rect_0',['rect',['../classQskItem.html#a8260268f41375f31dadfc71f460b04aa',1,'QskItem::rect'],['../classQskItem.html#abdf46b27be897f68046ffab565310cb4',1,'QskItem::rect() const']]],
   ['registerstate_1',['registerState',['../classQskAspect.html#aa672a874ab9cfdaab1f92f8daf34d775',1,'QskAspect']]],
   ['releaseresources_2',['releaseResources',['../classQskItem.html#a945bcb2422828b18ad359c2ba9da0540',1,'QskItem']]],
-  ['repository_3',['Building the QSkinny repository',['../tutorials.html#autotoc_md17',1,'']]],
-  ['representations_20of_20controls_4',['Scene graph representations of controls',['../tutorials.html#autotoc_md50',1,'']]],
+  ['repository_3',['Building the QSkinny repository',['../tutorials.html#autotoc_md18',1,'']]],
+  ['representations_20of_20controls_4',['Scene graph representations of controls',['../tutorials.html#autotoc_md51',1,'']]],
   ['reserve_5',['Reserve',['../classQskPlacementPolicy.html#a585e77ba561e8bf09109bd248cdcb0bfa13b50577861e1330542865c8cae50586',1,'QskPlacementPolicy']]],
   ['resetalignmenthint_6',['resetAlignmentHint',['../classQskSkinnable.html#aceb9cbb454c374597cad538237ea2011',1,'QskSkinnable']]],
   ['resetbackground_7',['resetBackground',['../classQskControl.html#a6335bb98d5e325b0c7c0c526299444d5',1,'QskControl']]],
@@ -30,5 +30,5 @@ var searchData=
   ['resolvevisitor_27',['ResolveVisitor',['../classQskObjectTree_1_1ResolveVisitor.html',1,'QskObjectTree']]],
   ['right_28',['Right',['../classQskAspect.html#a4fa173c2083729cc9d0dafcb2ada59b4acd88ead376bc410caa55b635aee246b6',1,'QskAspect']]],
   ['righttoleft_29',['RightToLeft',['../namespaceQsk.html#a3732501dd24802564a701bce469140fca7782393020345d4068007db816760505',1,'Qsk']]],
-  ['run_20qskinny_20for_20wasm_30',['Run QSkinny for Wasm',['../tutorials.html#autotoc_md54',1,'']]]
+  ['run_20qskinny_20for_20wasm_30',['Run QSkinny for Wasm',['../tutorials.html#autotoc_md55',1,'']]]
 ];

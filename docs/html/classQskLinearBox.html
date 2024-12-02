@@ -155,7 +155,17 @@ $(document).ready(function(){initNavTree('classQskLinearBox.html',''); initResiz
  <a href="classQskLinearBox.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="QskLinearBox_8h_source.html">QskLinearBox.h</a>&gt;</code></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Layout stringing items in rows and columns. </p>
+<div> <div id="qtspinner"> <div id="qtstatus"></div> </div> <div id="qt-wasm-screen"> </div> </div><p><a class="el" href="classQskLinearBox.html" title="Layout stringing items in rows and columns.">QskLinearBox</a> organizes layout items in vertical or horizontal order ( <a class="el" href="classQskLinearBox.html#adbf81e4dfe2cb2c39a6e9f3ef545e2f6">orientation</a> ). When the number of items for a row/column has reached an upper limit ( <a class="el" href="classQskLinearBox.html#a226fa30d355ce5d8913ccb9c29c7a60b">dimension</a> ) the following items will be added to a new row/column.</p>
+<p>When having the <a class="el" href="classQskLinearBox.html#a226fa30d355ce5d8913ccb9c29c7a60b">dimension</a> being set to unlimited ( or 1 with the inverted <a class="el" href="classQskLinearBox.html#adbf81e4dfe2cb2c39a6e9f3ef545e2f6">orientation</a> ) the string layout behaves similar to QBoxLayout, RowLayout/ColumnLayout ( QML ) or what is sometimes called a linear layout.</p>
+<p>When not restricting the layout to one row/column only the layout can be used to set up simple grid formations.</p>
+<p>Layout items may be QQuickItem *s or spacers - both having a stretch factor in the range of [0..10];</p>
+<dl class="section note"><dt>Note</dt><dd>All available <a class="el" href="namespaceQsk.html" title="Global definitions.">Qsk</a> layouts are thin layers on top of the same grid based workhorse ( = QGridLayoutEngine ). <a class="el" href="classQskLinearBox.html" title="Layout stringing items in rows and columns.">QskLinearBox</a> offers a reasonable subset of features, tailored for an index based point of view.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQskGridBox.html">QskGridBox</a>, <a class="el" href="classQskStackBox.html">QskStackBox</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="QskLinearBox_8h_source.html#l00011">11</a> of file <a class="el" href="QskLinearBox_8h_source.html">QskLinearBox.h</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for QskLinearBox:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classQskLinearBox__inherit__graph.svg" width="235" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -1097,17 +1107,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ab166f177885998d1cacd3564505e43ae inherit pub_static_attribs_classQskControl" id="r_ab166f177885998d1cacd3564505e43ae"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classQskAspect.html#a1525d3dfa407f0116af827748050200b">QskAspect::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQskControl.html#ab166f177885998d1cacd3564505e43ae">Focused</a></td></tr>
 <tr class="separator:ab166f177885998d1cacd3564505e43ae inherit pub_static_attribs_classQskControl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Layout stringing items in rows and columns. </p>
-<div> <div id="qtspinner"> <div id="qtstatus"></div> </div> <div id="qt-wasm-screen"> </div> </div><p><a class="el" href="classQskLinearBox.html" title="Layout stringing items in rows and columns.">QskLinearBox</a> organizes layout items in vertical or horizontal order ( <a class="el" href="classQskLinearBox.html#adbf81e4dfe2cb2c39a6e9f3ef545e2f6">orientation</a> ). When the number of items for a row/column has reached an upper limit ( <a class="el" href="classQskLinearBox.html#a226fa30d355ce5d8913ccb9c29c7a60b">dimension</a> ) the following items will be added to a new row/column.</p>
-<p>When having the <a class="el" href="classQskLinearBox.html#a226fa30d355ce5d8913ccb9c29c7a60b">dimension</a> being set to unlimited ( or 1 with the inverted <a class="el" href="classQskLinearBox.html#adbf81e4dfe2cb2c39a6e9f3ef545e2f6">orientation</a> ) the string layout behaves similar to QBoxLayout, RowLayout/ColumnLayout ( QML ) or what is sometimes called a linear layout.</p>
-<p>When not restricting the layout to one row/column only the layout can be used to set up simple grid formations.</p>
-<p>Layout items may be QQuickItem *s or spacers - both having a stretch factor in the range of [0..10];</p>
-<dl class="section note"><dt>Note</dt><dd>All available <a class="el" href="namespaceQsk.html" title="Global definitions.">Qsk</a> layouts are thin layers on top of the same grid based workhorse ( = QGridLayoutEngine ). <a class="el" href="classQskLinearBox.html" title="Layout stringing items in rows and columns.">QskLinearBox</a> offers a reasonable subset of features, tailored for an index based point of view.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQskGridBox.html">QskGridBox</a>, <a class="el" href="classQskStackBox.html">QskStackBox</a> </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="QskLinearBox_8h_source.html#l00011">11</a> of file <a class="el" href="QskLinearBox_8h_source.html">QskLinearBox.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a227534c92fc0d643476f68a23d49d583" name="a227534c92fc0d643476f68a23d49d583"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a227534c92fc0d643476f68a23d49d583">&#9670;&#160;</a></span>QskLinearBox() <span class="overload">[1/3]</span></h2>
 

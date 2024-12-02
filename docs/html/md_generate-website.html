@@ -181,12 +181,17 @@ Generating specific header and footer files for doxygen</h2>
 <p><em>Also</em>, change the <code>&lt;body&gt;</code> tag to load the WASM code at startup:</p>
 <div class="fragment"><div class="line">&lt;body onLoad=&quot;docSampleInit()&quot;&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md5"></a>
+Generating a doxygen layout page</h2>
+<p><em>This needs to be done only when the doxygen version changes.</em></p>
+<div class="fragment"><div class="line">doxygen -l</div>
+</div><!-- fragment --><p>Make sure that the tag labeled <code>&lt;detaileddescription&gt;</code> comes before the tag <code>&lt;inheritancegraph&gt;</code>, because the former contains the WASM code, which should be displayed near the top of the page.</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Using a different stylesheet for doxygen</h2>
 <div class="fragment"><div class="line">git clone git clone git@github.com:jothepro/doxygen-awesome-css.git</div>
 <div class="line">cd doxygen-awesome-css</div>
 <div class="line">git checkout v2.3.4</div>
 <div class="line">cp doxygen-awesome.css ~/dev/qskinny/doc/</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
 Testing and building the website locally</h2>
 <p>First copy the generated files from above to the website repo:</p>
 <div class="fragment"><div class="line">cp -r api ~/dev/qskinny-website/docs/</div>
@@ -196,7 +201,7 @@ Testing and building the website locally</h2>
 </div><!-- fragment --><p>Then direct your browser to <code><a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a></code>.</p>
 <p>If all looks good, generate the static HTML website:</p>
 <div class="fragment"><div class="line">bundle exec jekyll build</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
 Publishing the website</h2>
 <p>Just copy over the generated HTML files to the public website repo and push a new version of the homepage:</p>
 <div class="fragment"><div class="line">cp -r _site/* ~/dev/qskinny.github.io/</div>

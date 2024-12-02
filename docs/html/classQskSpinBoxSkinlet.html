@@ -153,7 +153,20 @@ $(document).ready(function(){initNavTree('classQskSpinBoxSkinlet.html',''); init
  <a href="classQskSpinBoxSkinlet.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="QskSpinBoxSkinlet_8h_source.html">QskSpinBoxSkinlet.h</a>&gt;</code></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This skinlet's purpose is to draw a <a class="el" href="classQskSpinBox.html" title="A control to edit, increment and decrement number values.">QskSpinBox</a> instance. </p>
+<p>In order to manage individual subcontrol states this skinlet uses subcontrol sampling. Although it is most usefull when dealing with dynamic or large numbers of subcontrols, it is a strategy to index the subcontrol in order to have individual states instead of one collective state on the skinnable object.</p>
+<dl class="section note"><dt>Note</dt><dd>The placement and dimensions of all subcontrols depend on the following subctrontrol aspects:</dd></dl>
+<ul>
+<li>QskSpinBox::Layout's alignment hint ( which affects the positions of all controls )</li>
+<li>QskSpinBox::Layout's spacing hint</li>
+<li>QskSpinBox::IncrementPanel's strut size hint</li>
+<li>QskSpinBox::DecrementPanel's strut size hint</li>
+<li><a class="el" href="classQskSpinBox.html#a0abc080ae7b2493bd2b670424cad704d" title="The background of the text showing the number.">QskSpinBox::TextPanel</a>'s strut size hint </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="QskSpinBoxSkinlet_8h_source.html#l00011">11</a> of file <a class="el" href="QskSpinBoxSkinlet_8h_source.html">QskSpinBoxSkinlet.h</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for QskSpinBoxSkinlet:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classQskSpinBoxSkinlet__inherit__graph.svg" width="156" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -281,20 +294,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6050267c759396a14dba98864f80ac27 inherit pub_static_methods_classQskSkinlet" id="r_a6050267c759396a14dba98864f80ac27"><td class="memItemLeft" align="right" valign="top">static QSGNode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQskSkinlet.html#a6050267c759396a14dba98864f80ac27">updateBoxClipNode</a> (const <a class="el" href="classQskSkinnable.html">QskSkinnable</a> *, QSGNode *, const QRectF &amp;, <a class="el" href="classQskAspect.html#ac7da709200e9d0e9e3fea08ccb2cc9a4">QskAspect::Subcontrol</a>)</td></tr>
 <tr class="separator:a6050267c759396a14dba98864f80ac27 inherit pub_static_methods_classQskSkinlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This skinlet's purpose is to draw a <a class="el" href="classQskSpinBox.html" title="A control to edit, increment and decrement number values.">QskSpinBox</a> instance. </p>
-<p>In order to manage individual subcontrol states this skinlet uses subcontrol sampling. Although it is most usefull when dealing with dynamic or large numbers of subcontrols, it is a strategy to index the subcontrol in order to have individual states instead of one collective state on the skinnable object.</p>
-<dl class="section note"><dt>Note</dt><dd>The placement and dimensions of all subcontrols depend on the following subctrontrol aspects:</dd></dl>
-<ul>
-<li>QskSpinBox::Layout's alignment hint ( which affects the positions of all controls )</li>
-<li>QskSpinBox::Layout's spacing hint</li>
-<li>QskSpinBox::IncrementPanel's strut size hint</li>
-<li>QskSpinBox::DecrementPanel's strut size hint</li>
-<li><a class="el" href="classQskSpinBox.html#a0abc080ae7b2493bd2b670424cad704d" title="The background of the text showing the number.">QskSpinBox::TextPanel</a>'s strut size hint </li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="QskSpinBoxSkinlet_8h_source.html#l00011">11</a> of file <a class="el" href="QskSpinBoxSkinlet_8h_source.html">QskSpinBoxSkinlet.h</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a5b39fb1d0f38ffcfceefccb98dcc5ad9" name="a5b39fb1d0f38ffcfceefccb98dcc5ad9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b39fb1d0f38ffcfceefccb98dcc5ad9">&#9670;&#160;</a></span>NodeRole</h2>
 

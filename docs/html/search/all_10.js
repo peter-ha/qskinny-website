@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['of_20controls_0',['Scene graph representations of controls',['../tutorials.html#autotoc_md50',1,'']]],
-  ['of_20layouts_1',['Types of layouts',['../tutorials.html#autotoc_md25',1,'']]],
+  ['of_20controls_0',['Scene graph representations of controls',['../tutorials.html#autotoc_md51',1,'']]],
+  ['of_20layouts_1',['Types of layouts',['../tutorials.html#autotoc_md26',1,'']]],
   ['operator_21_3d_2',['operator!=',['../classQskPlacementPolicy.html#a3d64d09333c436628e9672ed35cf393a',1,'QskPlacementPolicy::operator!=()'],['../classQskAspect.html#a97c9c5c39ef6eb1c17e48198ec9da7c5',1,'QskAspect::operator!=(const QskAspect &amp;) const noexcept']]],
   ['operator_3c_3',['operator&lt;',['../classQskAspect.html#a4d5a0c13450e51859afbe45e49aeedda',1,'QskAspect']]],
   ['operator_3d_4',['operator=',['../classQskAspect.html#a7d3ec918e7165f58aa22099439976996',1,'QskAspect']]],
@@ -10,9 +10,9 @@ var searchData=
   ['optimizations_7',['Optimizations',['../qskoptimizations.html',1,'']]],
   ['orientation_8',['orientation',['../classQskSeparator.html#acb7e61c9b8832ff71ad9809addf3047b',1,'QskSeparator::orientation'],['../classQskLinearBox.html#adbf81e4dfe2cb2c39a6e9f3ef545e2f6',1,'QskLinearBox::orientation'],['../classQskSeparator.html#a2469c37becfabc6b91372dc2f99ee605',1,'QskSeparator::orientation()'],['../classQskLinearBox.html#ad61c3a71ddfcddea2350388b4db076a7',1,'QskLinearBox::orientation()']]],
   ['orientationchanged_9',['orientationchanged',['../classQskSeparator.html#ac0c5da73bcf7a3eec83dea93f6a124fb',1,'QskSeparator::orientationChanged()'],['../classQskLinearBox.html#a19ab6152846960b0404eaa8f487437a8',1,'QskLinearBox::orientationChanged()']]],
-  ['other_20build_20systems_20ides_10',['1.1 Integration with other build systems / IDEs',['../tutorials.html#autotoc_md11',1,'']]],
-  ['our_20first_20app_11',['Compiling our first app',['../tutorials.html#autotoc_md18',1,'']]],
+  ['other_20build_20systems_20ides_10',['1.1 Integration with other build systems / IDEs',['../tutorials.html#autotoc_md12',1,'']]],
+  ['our_20first_20app_11',['Compiling our first app',['../tutorials.html#autotoc_md19',1,'']]],
   ['outerbox_12',['outerBox',['../classQskSkinnable.html#ac51f38f9d7b1260f4668d39bd7851db9',1,'QskSkinnable']]],
   ['outerboxsize_13',['outerBoxSize',['../classQskSkinnable.html#a7949f35a99c24bedba529693454d86d0',1,'QskSkinnable']]],
-  ['own_20controls_14',['Writing own controls',['../tutorials.html#autotoc_md42',1,'']]]
+  ['own_20controls_14',['Writing own controls',['../tutorials.html#autotoc_md43',1,'']]]
 ];

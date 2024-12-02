@@ -155,7 +155,22 @@ $(document).ready(function(){initNavTree('classQskGraphic.html',''); initResizab
  <a href="classQskGraphic.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="QskGraphic_8h_source.html">QskGraphic.h</a>&gt;</code></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A paint device for scalable graphics. </p>
+<p><a class="el" href="classQskGraphic.html" title="A paint device for scalable graphics.">QskGraphic</a> is the representation of a graphic that is tailored for scalability. Like QPicture it will be initialized by QPainter operations and can be replayed later to any target paint device. It can be stored and loaded from disk using the operators from QskGraphicIO. Together with QSvgRenderer it can be used to implement a simple SVG compiler.</p>
+<p><a class="el" href="classQskGraphic.html" title="A paint device for scalable graphics.">QskGraphic</a> maps all scalable drawing primitives to a QPainterPath and stores them together with the painter state changes ( pen, brush, transformation ... ) in a list of <a class="el" href="classQskPainterCommand.html">QskPainterCommand</a>. For being a complete QPaintDevice it also stores pixmaps or images, what is somehow against the idea of the class, because these objects can't be scaled without a loss in quality.</p>
+<p>The main issue about scaling a <a class="el" href="classQskGraphic.html" title="A paint device for scalable graphics.">QskGraphic</a> object are the pens used for drawing the outlines of the painter paths. While non cosmetic pens ( QPen::isCosmetic() ) are scaled with the same ratio as the path, cosmetic pens have a fixed width. A graphic might have paths with different pens - cosmetic and non-cosmetic.</p>
+<p><a class="el" href="classQskGraphic.html" title="A paint device for scalable graphics.">QskGraphic</a> caches 2 different rectangles:</p>
+<ul>
+<li>control point rectangle<br  />
+ The control point rectangle is the bounding rectangle of all control point rectangles of the painter paths, or the target rectangle of the pixmaps/images.</li>
+<li>bounding rectangle<br  />
+ The bounding rectangle extends the control point rectangle by what is needed for rendering the outline with an unscaled pen.</li>
+</ul>
+<p>Because the offset for drawing the outline depends on the shape of the painter path ( the peak of a triangle is different than the flat side ) scaling with a fixed aspect ratio always needs to be calculated from the control point rectangle. </p>
+
+<p class="definition">Definition at line <a class="el" href="QskGraphic_8h_source.html#l00027">27</a> of file <a class="el" href="QskGraphic_8h_source.html">QskGraphic.h</a>.</p>
+</div><div class="dynheader">
 Inheritance diagram for QskGraphic:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classQskGraphic__inherit__graph.svg" width="120" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -294,22 +309,7 @@ Properties</h2></td></tr>
 <tr class="memitem:a6c668ea966c88379f5fc29c0f844ccf5" id="r_a6c668ea966c88379f5fc29c0f844ccf5"><td class="memItemLeft" align="right" valign="top">quint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQskGraphic.html#a6c668ea966c88379f5fc29c0f844ccf5">modificationId</a></td></tr>
 <tr class="separator:a6c668ea966c88379f5fc29c0f844ccf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A paint device for scalable graphics. </p>
-<p><a class="el" href="classQskGraphic.html" title="A paint device for scalable graphics.">QskGraphic</a> is the representation of a graphic that is tailored for scalability. Like QPicture it will be initialized by QPainter operations and can be replayed later to any target paint device. It can be stored and loaded from disk using the operators from QskGraphicIO. Together with QSvgRenderer it can be used to implement a simple SVG compiler.</p>
-<p><a class="el" href="classQskGraphic.html" title="A paint device for scalable graphics.">QskGraphic</a> maps all scalable drawing primitives to a QPainterPath and stores them together with the painter state changes ( pen, brush, transformation ... ) in a list of <a class="el" href="classQskPainterCommand.html">QskPainterCommand</a>. For being a complete QPaintDevice it also stores pixmaps or images, what is somehow against the idea of the class, because these objects can't be scaled without a loss in quality.</p>
-<p>The main issue about scaling a <a class="el" href="classQskGraphic.html" title="A paint device for scalable graphics.">QskGraphic</a> object are the pens used for drawing the outlines of the painter paths. While non cosmetic pens ( QPen::isCosmetic() ) are scaled with the same ratio as the path, cosmetic pens have a fixed width. A graphic might have paths with different pens - cosmetic and non-cosmetic.</p>
-<p><a class="el" href="classQskGraphic.html" title="A paint device for scalable graphics.">QskGraphic</a> caches 2 different rectangles:</p>
-<ul>
-<li>control point rectangle<br  />
- The control point rectangle is the bounding rectangle of all control point rectangles of the painter paths, or the target rectangle of the pixmaps/images.</li>
-<li>bounding rectangle<br  />
- The bounding rectangle extends the control point rectangle by what is needed for rendering the outline with an unscaled pen.</li>
-</ul>
-<p>Because the offset for drawing the outline depends on the shape of the painter path ( the peak of a triangle is different than the flat side ) scaling with a fixed aspect ratio always needs to be calculated from the control point rectangle. </p>
-
-<p class="definition">Definition at line <a class="el" href="QskGraphic_8h_source.html#l00027">27</a> of file <a class="el" href="QskGraphic_8h_source.html">QskGraphic.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9aec12d18141e33b89b08feda371e57b" name="a9aec12d18141e33b89b08feda371e57b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9aec12d18141e33b89b08feda371e57b">&#9670;&#160;</a></span>CommandTypes</h2>
 
