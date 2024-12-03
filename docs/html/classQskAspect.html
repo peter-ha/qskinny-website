@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('classQskAspect.html',''); initResizabl
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classQskAspect-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">QskAspect Class Reference<div class="ingroups"><a class="el" href="group__Themeing.html">Themeing</a></div></div></div>
+  <div class="headertitle"><div class="title">QskAspect Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('classQskAspect.html',''); initResizabl
 <p><code>#include &lt;<a class="el" href="QskAspect_8h_source.html">QskAspect.h</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Lookup key for a <a class="el" href="classQskSkinHintTable.html">QskSkinHintTable</a>. </p>
-<p><a class="el" href="classQskAspect.html" title="Lookup key for a QskSkinHintTable.">QskAspect</a> is used by the <a class="el" href="qskskinning.html">themeing system</a> to determine a a certain aspect of a <a class="el" href="classQskSkinnable.html">QskSkinnable</a>. While an aspect is simply a 64-bit unsigned integer, it is composed of smaller enum bitfields which can be ORed together to describe a more specific part of the user interface.</p>
+<p><a class="el" href="classQskAspect.html" title="Lookup key for a QskSkinHintTable.">QskAspect</a> is used by the themeing system to determine a a certain aspect of a <a class="el" href="classQskSkinnable.html">QskSkinnable</a>. While an aspect is simply a 64-bit unsigned integer, it is composed of smaller enum bitfields which can be ORed together to describe a more specific part of the user interface.</p>
 <p>For example, the border colors of a <a class="el" href="classQskPushButton.html">QskPushButton</a> while pressed is defined by combining the State (QskAbstractButton::Pressed) with the Subcontrol (QskPushButton::Panel), the Primitive (<a class="el" href="classQskAspect.html#a916d523f0d3d620c06f7503037c47fafac62a19981a2e02aa90ffd0038a944ac1">QskAspect::Border</a>), and the Type (<a class="el" href="classQskAspect.html#abe34bcf592dd94b99b1a3461e810ad73a350d17eff6264c9b700045ba778c83ba">QskAspect::Color</a>) as so: </p><pre class="fragment">auto aspect = QskPushButton::Panel | QskAbstractButton::Pressed | QskAspect::Color | QskAspect::Border
 </pre> <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQskSkinnable.html#a03bf1ba82731a7ae28bd2630a322fd66" title="Find the value for a specific aspect.">QskSkinnable::effectiveSkinHint()</a>, <a class="el" href="classQskSkinHintTable.html">QskSkinHintTable</a> </dd></dl>
 

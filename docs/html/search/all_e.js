@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['making_20custom_20classes_20skinnable_0',['Making custom classes skinnable',['../tutorials.html#autotoc_md45',1,'']]],
+  ['making_20custom_20classes_20skinnable_0',['Making custom classes skinnable',['../tutorials.html#autotoc_md36',1,'']]],
   ['margin_1',['Margin',['../classQskAspect.html#a916d523f0d3d620c06f7503037c47fafa86d7819dd6532b161e2a32ae46f1c556',1,'QskAspect']]],
   ['marginhint_2',['marginHint',['../classQskSkinnable.html#a2b463eac41831fc5813c324b590cbfd4',1,'QskSkinnable']]],
   ['margins_3',['margins',['../classQskControl.html#ac16a7d163e51751880b97ea3faf5292b',1,'QskControl::margins'],['../classQskControl.html#a4fc476bb33d343973aec923b71b1afc5',1,'QskControl::margins() const']]],

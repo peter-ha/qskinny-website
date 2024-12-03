@@ -8,8 +8,7 @@ var indexSectionsWithContent =
   5: "dpstuv",
   6: "abcdfghilmnprstv",
   7: "abdghilmoprstuv",
-  8: "acdfglst",
-  9: "gloqstvw"
+  8: "qt"
 };
 
 var indexSectionNames =
@@ -22,8 +21,7 @@ var indexSectionNames =
   5: "enums",
   6: "enumvalues",
   7: "properties",
-  8: "groups",
-  9: "pages"
+  8: "pages"
 };
 
 var indexSectionLabels =
@@ -36,7 +34,6 @@ var indexSectionLabels =
   5: "Enumerations",
   6: "Enumerator",
   7: "Properties",
-  8: "Modules",
-  9: "Pages"
+  8: "Pages"
 };
 

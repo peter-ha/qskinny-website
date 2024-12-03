@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['ides_0',['1.1 Integration with other build systems / IDEs',['../tutorials.html#autotoc_md12',1,'']]],
+  ['ides_0',['1.1 Integration with other build systems / IDEs',['../tutorials.html#autotoc_md3',1,'']]],
   ['ignore_1',['Ignore',['../classQskPlacementPolicy.html#a585e77ba561e8bf09109bd248cdcb0bfa42fd248ea8d158266996c61a6557638b',1,'QskPlacementPolicy']]],
   ['image_2',['Image',['../classQskPainterCommand.html#a63dce64f21aff199cb3fcb39cba1c9b1a983955c61cf4fa605203e37427f845a8',1,'QskPainterCommand']]],
   ['imagedata_3',['imageData',['../classQskPainterCommand.html#acaecb1de17f2de72a279266d33ca21b4',1,'QskPainterCommand']]],
   ['implicitsize_4',['implicitSize',['../classQskItem.html#a19f1a0048057ca9db7fc905f2c17b50c',1,'QskItem']]],
-  ['in_20qskinny_5',['Anchoring in QSkinny',['../tutorials.html#autotoc_md33',1,'']]],
+  ['in_20qskinny_5',['Anchoring in QSkinny',['../tutorials.html#autotoc_md24',1,'']]],
   ['initiallypainted_6',['initiallyPainted',['../classQskItem.html#afd2c887321c106af395cd226c5d29ea9',1,'QskItem']]],
   ['initsizepolicy_7',['initSizePolicy',['../classQskControl.html#ac155707888f6b88e88a8b9829646f335',1,'QskControl']]],
   ['innerbox_8',['innerBox',['../classQskSkinnable.html#ade5ed80b1fb55a4efdce8cf27400b976',1,'QskSkinnable']]],
@@ -13,9 +13,9 @@ var searchData=
   ['innerpadding_10',['innerPadding',['../classQskSkinnable.html#a6e9d08ad3820abd4951d6bc9ef4fe331',1,'QskSkinnable']]],
   ['insertspacer_11',['insertSpacer',['../classQskLinearBox.html#a168d6bb708ca473ed2c909bcaab1b1ca',1,'QskLinearBox']]],
   ['insertstretch_12',['insertStretch',['../classQskLinearBox.html#af2180b9ca111884bcecf3b1938dd7fde',1,'QskLinearBox']]],
-  ['integration_20with_20other_20build_20systems_20ides_13',['1.1 Integration with other build systems / IDEs',['../tutorials.html#autotoc_md12',1,'']]],
+  ['integration_20with_20other_20build_20systems_20ides_13',['1.1 Integration with other build systems / IDEs',['../tutorials.html#autotoc_md3',1,'']]],
   ['invalid_14',['Invalid',['../classQskPainterCommand.html#a63dce64f21aff199cb3fcb39cba1c9b1ac6432f4e2bece001a84aa8b20a90b2e4',1,'QskPainterCommand']]],
-  ['is_20qskinny_15',['What is QSkinny?',['../tutorials.html#autotoc_md9',1,'']]],
+  ['is_20qskinny_15',['What is QSkinny?',['../tutorials.html#autotoc_md0',1,'']]],
   ['isadjusting_16',['isAdjusting',['../classQskPlacementPolicy.html#a33cc361b5a4fd0e5346676b788b5ca2a',1,'QskPlacementPolicy']]],
   ['isanimator_17',['isAnimator',['../classQskAspect.html#a341fb79e29f6dafb798b725ae27827a5',1,'QskAspect']]],
   ['iscolor_18',['isColor',['../classQskAspect.html#a65b32e90ee86a297a88736d88ab0378c',1,'QskAspect']]],
@@ -31,7 +31,7 @@ var searchData=
   ['isvisibleto_28',['isVisibleTo',['../classQskItem.html#ad4beaddb5cf6e9d957d1a340f89174c2',1,'QskItem']]],
   ['isvisibletolayout_29',['isVisibleToLayout',['../classQskControl.html#a2b66f5eec2fa8901f434494d56e47a9b',1,'QskControl']]],
   ['isvisibletoparent_30',['isVisibleToParent',['../classQskItem.html#a3885a0ff6d5279f1ee50bbf4adc908d8',1,'QskItem']]],
-  ['it_20s_20c_31',['1. It&apos;s C++',['../tutorials.html#autotoc_md11',1,'']]],
+  ['it_20s_20c_31',['1. It&apos;s C++',['../tutorials.html#autotoc_md2',1,'']]],
   ['itemchange_32',['itemchange',['../classQskControl.html#a6f2c1d933cb7d6b53229400737ea10cb',1,'QskControl::itemChange()'],['../classQskItem.html#a4732f60249f6ca467b19a29d17028fba',1,'QskItem::itemChange()'],['../classQskIndexedLayoutBox.html#a029848ad67d62c1d5089c6ce571729a8',1,'QskIndexedLayoutBox::itemChange()']]],
   ['itemflagschanged_33',['itemFlagsChanged',['../classQskItem.html#aa78184c9efb3def4ab2bd1754a2e5499',1,'QskItem']]]
 ];

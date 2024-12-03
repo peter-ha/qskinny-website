@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['layouts_0',['Layouts',['../qsklayouts.html',1,'']]]
+  ['tutorials_0',['Tutorials',['../tutorials.html',1,'']]]
 ];
