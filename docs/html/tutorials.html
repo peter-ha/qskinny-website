@@ -150,8 +150,11 @@ What is QSkinny?</h1>
 <p><img src="https://www.fendt.com/at/geneva-assets/widget/28282/news-3-low.jpg" alt="Fendt Tractor GUI" class="inline"/></p>
 <p>It is currently being used in the Fendt Tractor GUI project, see the picture above. For the Fendt Tractor GUI there is no QML used at all; the whole codebase is written in {cpp}. An overview of how QSkinny fits into the Qt architecture is depicted below:</p>
 <p><b>QSkinny sits on top of QtQuick, while QML is optional</b></p>
-<p><img src="/doc/tutorials/images/architecture-simple.png" alt="QSkinny architecture" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<div class="image">
+<img src="architecture-simple.png" alt=""/>
+<div class="caption">
+QSkinny architecture</div></div>
+    <h1><a class="anchor" id="autotoc_md10"></a>
 Why QSkinny?</h1>
 <p>The typical questions about QSkinny are: Why was QSkinny created? And why would somebody use QSkinny and not QML?</p>
 <p>Which technology to use always depends on the specific use case. However, QSkinny does have some advantages:</p>
@@ -303,8 +306,11 @@ Adding UI controls</h2>
 <div class="ttc" id="aclassQskPushButton_html"><div class="ttname"><a href="classQskPushButton.html">QskPushButton</a></div><div class="ttdef"><b>Definition</b> <a href="QskPushButton_8h_source.html#l00015">QskPushButton.h:16</a></div></div>
 <div class="ttc" id="aclassQskWindow_html"><div class="ttname"><a href="classQskWindow.html">QskWindow</a></div><div class="ttdef"><b>Definition</b> <a href="QskWindow_8h_source.html#l00016">QskWindow.h:17</a></div></div>
 </div><!-- fragment --><p>Now the app is displaying the two buttons:</p>
-<p><img src="/doc/tutorials/images/writing-first-application.png" alt="An app showing two buttons" class="inline"/></p>
-<p>That’s it; you just created a QSkinny application from scratch.</p>
+<div class="image">
+<img src="writing-first-application.png" alt=""/>
+<div class="caption">
+An app showing two buttons</div></div>
+    <p>That’s it; you just created a QSkinny application from scratch.</p>
 <p>For information on how the controls and layouts above behave, see the next chapters.</p>
 <h1><a class="anchor" id="autotoc_md21"></a>
 Layouts</h1>
@@ -316,8 +322,11 @@ Size hints</h2>
 of that size"), while implicit sizes are deduced from the elements themselves. Explicit size hints always take precedence over implicit ones.</p>
 <p>For instance, the implicit size of a button is calculated from the text width (which itself depends on the font) and possibly padding and margins:</p>
 <p><b>implicit horizontal size hint of a button</b></p>
-<p><img src="/doc/tutorials/images/size-hints-calculation.png" alt="implicit horizontal size hint of a button" class="inline"/></p>
-<p>The implicit width of a composited UI element containing a graphic on the left and a text on the right would be the sum of the elements’ width, again with padding and margins.</p>
+<div class="image">
+<img src="size-hints-calculation.png" alt=""/>
+<div class="caption">
+implicit horizontal size hint of a button</div></div>
+    <p>The implicit width of a composited UI element containing a graphic on the left and a text on the right would be the sum of the elements’ width, again with padding and margins.</p>
 <p>Layouts, i.e. classes deriving from <code><a class="el" href="classQskBox.html">QskBox</a></code>, are also controls (i.e. <code><a class="el" href="classQskControl.html" title="Base class of all controls.">QskControl</a></code> instances), so they also have size hints. A layout typically calculates its implicit size hint by summing up the size of its children. For instace a horizontal layout containing three buttons next to each other will calculate its implicit width by summing up the widths of the buttons (spacing and margins again come on top).</p>
 <p>There are three types of size hints: <b>Minimum</b>, <b>Preferred</b> and <b>Maximum</b>.</p>
 <ul>
@@ -334,30 +343,53 @@ Example</h3>
 <div class="line">label1-&gt;setMargins( 10 );</div>
 <div class="line">label1-&gt;setBackgroundColor( Qt::magenta );</div>
 </div><!-- fragment --><p><b>control without explicit size hint</b></p>
-<p><img src="/doc/tutorials/images/size-hints-1.png" alt="Image without explicit size hint" class="inline"/></p>
-<p>If we set an explicit size hint of 150x60 pixels ourselves for the preferred size, the control will be rendered differently:</p>
+<div class="image">
+<img src="size-hints-1.png" alt=""/>
+<div class="caption">
+Image without explicit size hint</div></div>
+    <p>If we set an explicit size hint of 150x60 pixels ourselves for the preferred size, the control will be rendered differently:</p>
 <div class="fragment"><div class="line">label1-&gt;setExplicitSizeHint( Qt::PreferredSize, { 150, 60 } );</div>
 </div><!-- fragment --><p><b>control with explicit size hint</b></p>
-<p><img src="/doc/tutorials/images/size-hints-2.png" alt="Image with explicit size hint" class="inline"/></p>
-<p>When dealing with standard controls or layouts, the size hints don’t need to be specified explicitly, as it can be deduced from its standard values, as seen in the example above.</p>
+<div class="image">
+<img src="size-hints-2.png" alt=""/>
+<div class="caption">
+Image with explicit size hint</div></div>
+    <p>When dealing with standard controls or layouts, the size hints don’t need to be specified explicitly, as it can be deduced from its standard values, as seen in the example above.</p>
 <p>The actual size of a UI element also depends on its size policy, see the next topic.</p>
 <h2><a class="anchor" id="autotoc_md24"></a>
 Size policies</h2>
 <p>Size policies define the way UI elements can change their size depending on the available space. Imagine a UI with a top bar and a main content area: When a status bar at the bottom is to be faded in, the top bar and main content have less space to display. One way to deal with this would be to leave the top bar at the same size and shrink the main area. This can be achieved with size policies: The top bar would have a vertical size policy of <code>Fixed</code>, while the main area would be <code>Preferred</code>, meaning it can grow and shrink.</p>
 <p>The size policies of QSkinny correspond to the <em><a href="https://doc.qt.io/qt-5/qsizepolicy.html#Policy-enum">https://doc.qt.io/qt-5/qsizepolicy.html#Policy-enum</a>[size policies from QtWidgets]</em>:</p>
-<p>|======================================================================= |<code>QskSizePolicy::Policy</code> |description |<code>Fixed</code> |The control has a fixed size and can neither grow nor shrink.</p>
-<p>|<code>Minimum</code> |The control cannot shrink beyond its minimum size, but it can grow if needed.</p>
-<p>|<code>Maximum</code> |The control cannot grow beyond its maximum size, but it can shrink if needed.</p>
-<p>|<code>Preferred</code> |The control can grow and shrink, but it should be of the size given by <code>sizeHint()</code>.</p>
-<p>|<code>MinimumExpanding</code> |The control cannot shrink beyond its minimum size, but it can grow and should get as much space as possible.</p>
-<p>|<code>Expanding</code> |The control can shrink and grow, and it should get as much space as possible.</p>
-<p>|<code>Ignored</code> |The <code>sizeHint()</code> is ignored, and the control will get as much space as possible.</p>
-<p>|<code>Constrained</code> |The size of the control depends on a constraint, i.e. the width is depending on the height or vice versa. For this policy and the other <code>Constrained*</code> ones below, <code><a class="el" href="classQskControl.html#a3d70b8e85160cd239393cfb734cdd751">QskControl::widthForHeight()</a></code> or <code><a class="el" href="classQskControl.html#a4e66fe7677acfedbae22ba2fbd4e027b">QskControl::heightForWidth()</a></code> will be queried.</p>
-<p>|<code>ConstrainedMinimum</code> |The size of the control depends on a constraint, but it can grow if needed.</p>
-<p>|<code>ConstrainedMaximum</code> |The size of the control depends on a constraint, but it can shrink if needed.</p>
-<p>|<code>ConstrainedPreferred</code> |The size of the control depends on a constraint, but it can grow and srhink if needed.</p>
-<p>|<code>ConstrainedMinimumExpanding</code> |The size of the control depends on a constraint, but it can grow and should get as much space as possible.</p>
-<p>|<code>ConstrainedExpanding</code> |The size of the control depends on a constraint, and it should get as much space as possible. |=======================================================================</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><code>QskSizePolicy::Policy</code>   </th><th class="markdownTableHeadNone">description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>Fixed</code>   </td><td class="markdownTableBodyNone">The control has a fixed size and can neither grow nor shrink.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>Minimum</code>   </td><td class="markdownTableBodyNone">The control cannot shrink beyond its minimum size, but it can grow if needed.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>Maximum</code>   </td><td class="markdownTableBodyNone">The control cannot grow beyond its maximum size, but it can shrink if needed.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>Preferred</code>   </td><td class="markdownTableBodyNone">The control can grow and shrink, but it should be of the size given by <code>sizeHint()</code>.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>MinimumExpanding</code>   </td><td class="markdownTableBodyNone">The control cannot shrink beyond its minimum size, but it can grow and should get as much space as possible.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>Expanding</code>   </td><td class="markdownTableBodyNone">The control can shrink and grow, and it should get as much space as possible.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>Ignored</code>   </td><td class="markdownTableBodyNone">The <code>sizeHint()</code> is ignored, and the control will get as much space as possible.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>Constrained</code>   </td><td class="markdownTableBodyNone">The size of the control depends on a constraint, i.e. the width is depending on the height or vice versa. For this policy and the other <code>Constrained*</code> ones below, <code><a class="el" href="classQskControl.html#a3d70b8e85160cd239393cfb734cdd751">QskControl::widthForHeight()</a></code> or <code><a class="el" href="classQskControl.html#a4e66fe7677acfedbae22ba2fbd4e027b">QskControl::heightForWidth()</a></code> will be queried.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>ConstrainedMinimum</code>   </td><td class="markdownTableBodyNone">The size of the control depends on a constraint, but it can grow if needed.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>ConstrainedMaximum</code>   </td><td class="markdownTableBodyNone">The size of the control depends on a constraint, but it can shrink if needed.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>ConstrainedPreferred</code>   </td><td class="markdownTableBodyNone">The size of the control depends on a constraint, but it can grow and srhink if needed.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>ConstrainedMinimumExpanding</code>   </td><td class="markdownTableBodyNone">The size of the control depends on a constraint, but it can grow and should get as much space as possible.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>ConstrainedExpanding</code>   </td><td class="markdownTableBodyNone">The size of the control depends on a constraint, and it should get as much space as possible.   </td></tr>
+</table>
 <p>All the <code>Constrained*</code> policies correspond to Qt’s <a href="https://doc.qt.io/qt-5/qsizepolicy.html#hasHeightForWidth">QSizePolicy::hasHeightForWidth()</a> or <a href="https://doc.qt.io/qt-5/qsizepolicy.html#hasWidthForHeight">QSizePolicy::hasWidthForHeight()</a> flag. E.g. if a control has a horizontal size policy of <code>Constrained</code> and a vertical size policy of <code>Fixed</code>, it will call <code>widthForHeight()</code> to determine the width that corresponds to the height.</p>
 <h3><a class="anchor" id="autotoc_md25"></a>
 Example</h3>
@@ -374,19 +406,31 @@ Example</h3>
 <div class="line">...</div>
 </div><!-- fragment --><p>By default the width of the buttons is determined by its text plus its margins:</p>
 <p><b>Size policies with preferred size</b></p>
-<p><img src="/doc/tutorials/images/size-policies-horizontal-minimum-1.png" alt="Fixed vs. Minimum size policy" class="inline"/></p>
-<p>After growing the window horizontally, the button with the Fixed horizontal size policy keeps its width, while the button with the Minimum policy will grow:</p>
+<div class="image">
+<img src="size-policies-horizontal-minimum-1.png" alt=""/>
+<div class="caption">
+Fixed vs. Minimum size policy</div></div>
+    <p>After growing the window horizontally, the button with the Fixed horizontal size policy keeps its width, while the button with the Minimum policy will grow:</p>
 <p><b>Size policies when increasing window width</b></p>
-<p><img src="/doc/tutorials/images/size-policies-horizontal-minimum-2.png" alt="Fixed vs. Minimum size policy" class="inline"/></p>
-<p>When shrinking the window below its original size, both buttons stay with their width: The one on the left because of its <code>Fixed</code> size policy, and the one on the right because it won’t shrink below its original size due to the <code>Minimum</code> size policy.</p>
+<div class="image">
+<img src="size-policies-horizontal-minimum-2.png" alt=""/>
+<div class="caption">
+Fixed vs. Minimum size policy</div></div>
+    <p>When shrinking the window below its original size, both buttons stay with their width: The one on the left because of its <code>Fixed</code> size policy, and the one on the right because it won’t shrink below its original size due to the <code>Minimum</code> size policy.</p>
 <p><b>Size policies when shrinking window width</b></p>
-<p><img src="/doc/tutorials/images/size-policies-horizontal-minimum-3.png" alt="Fixed vs. Minimum size policy" class="inline"/></p>
-<p>If we change the policy of the right button to <code>Preferred</code>, it will shrink below its original size (even though the text is too wide now):</p>
+<div class="image">
+<img src="size-policies-horizontal-minimum-3.png" alt=""/>
+<div class="caption">
+Fixed vs. Minimum size policy</div></div>
+    <p>If we change the policy of the right button to <code>Preferred</code>, it will shrink below its original size (even though the text is too wide now):</p>
 <div class="fragment"><div class="line">label2-&gt;setSizePolicy( Qt::Horizontal, QskSizePolicy::Preferred );</div>
 <div class="line">label2-&gt;setText( &quot;size policy: preferred&quot; );</div>
 </div><!-- fragment --><p><b>Size policies when changing to preferred size policy</b></p>
-<p><img src="/doc/tutorials/images/size-policies-horizontal-minimum-4.png" alt="Fixed vs. Minimum size policy" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<div class="image">
+<img src="size-policies-horizontal-minimum-4.png" alt=""/>
+<div class="caption">
+Fixed vs. Minimum size policy</div></div>
+    <h2><a class="anchor" id="autotoc_md26"></a>
 Types of layouts</h2>
 <p>There are different types of layouts that can group UI elements together. Internally, layouts use the <code>layoutRect()</code> method to determine the available space to place its children.</p>
 <h3><a class="anchor" id="autotoc_md27"></a>
@@ -404,8 +448,11 @@ Linear layouts (QskLinearBox)</h3>
 <div class="line">horizontalBox-&gt;addItem( label3 );</div>
 <div class="line">...</div>
 </div><!-- fragment --><p><b>Horizontal layout</b></p>
-<p><img src="/doc/tutorials/images/layout-horizontal.png" alt="Horizontal layout" class="inline"/></p>
-<div class="fragment"><div class="line">auto verticalBox = new QskLinearBox( Qt::Vertical );</div>
+<div class="image">
+<img src="layout-horizontal.png" alt=""/>
+<div class="caption">
+Horizontal layout</div></div>
+    <div class="fragment"><div class="line">auto verticalBox = new QskLinearBox( Qt::Vertical );</div>
 <div class="line"> </div>
 <div class="line">auto* label1 = new QskTextLabel( &quot;control 1&quot; );</div>
 <div class="line">verticalBox-&gt;addItem( label1 );</div>
@@ -417,8 +464,11 @@ Linear layouts (QskLinearBox)</h3>
 <div class="line">verticalBox-&gt;addItem( label3 );</div>
 <div class="line">...</div>
 </div><!-- fragment --><p><b>Vertical layout</b></p>
-<p><img src="/doc/tutorials/images/layout-vertical.png" alt="Vertical layout" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md28"></a>
+<div class="image">
+<img src="layout-vertical.png" alt=""/>
+<div class="caption">
+Vertical layout</div></div>
+    <h3><a class="anchor" id="autotoc_md28"></a>
 Grid layouts (QskGridBox)</h3>
 <p>Grid layouts are like linear layouts, but 2 dimensional, and support laying out UI controls in a grid, including spanning columns and rows.</p>
 <div class="fragment"><div class="line">auto* gridBox = new QskGridBox;</div>
@@ -444,8 +494,11 @@ Grid layouts (QskGridBox)</h3>
 <div class="line">auto* label7 = new QskTextLabel( &quot;control 7&quot; );</div>
 <div class="line">gridBox-&gt;addItem( label7, 2, 1, 1, 2 );</div>
 </div><!-- fragment --><p><b>Grid layout</b></p>
-<p><img src="/doc/tutorials/images/layout-grid.png" alt="Grid layout" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md29"></a>
+<div class="image">
+<img src="layout-grid.png" alt=""/>
+<div class="caption">
+Grid layout</div></div>
+    <h3><a class="anchor" id="autotoc_md29"></a>
 Stack layouts (QskStackBox)</h3>
 <p>Stack layouts allow for items to be arranged on top of each other. Usually there is one current (visible) item, while the rest of the items are hidden below the current one:</p>
 <div class="fragment"><div class="line">auto* stackBox = new QskStackBox;</div>
@@ -465,9 +518,12 @@ Stack layouts (QskStackBox)</h3>
 <div class="line">stackBox-&gt;setCurrentIndex( 2 );</div>
 <div class="line">...</div>
 </div><!-- fragment --><p><b>Stack layout (symbolized)</b></p>
-<p><img src="/doc/tutorials/images/layout-stack.png" alt="Stack layout" class="inline"/></p>
-<p>In this example, "control 3" is stacked on top of the blue and the cyan control. Controls in a stacked layout can be of different sizes.</p>
-<p><b>📌 NOTE</b>\ The image above is just for illustrating purposes. In practice the topmost control ("control 3" here) is completely covering the ones below it.</p>
+<div class="image">
+<img src="layout-stack.png" alt=""/>
+<div class="caption">
+Stack layout</div></div>
+    <p>In this example, "control 3" is stacked on top of the blue and the cyan control. Controls in a stacked layout can be of different sizes.</p>
+<p><b>NOTE</b>: The image above is just for illustrating purposes. In practice the topmost control ("control 3" here) is completely covering the ones below it.</p>
 <h3><a class="anchor" id="autotoc_md30"></a>
 QskControl::autoLayoutChildren()</h3>
 <p>When the <code><a class="el" href="classQskControl.html#afd0f572601d726d8b5f36e45185f6dba">QskControl::autoLayoutChildren()</a></code> flag is set, the control will recalculate the geometry of its children whenever the item is updating its layout.</p>
@@ -488,20 +544,32 @@ Stretch factors</h2>
 <div class="line">...</div>
 </div><!-- fragment --><p>When the layout has all the space it needs (but not more), both elements are rendered with their preferred size:</p>
 <p><b>Stretch factors with preferred size</b></p>
-<p><img src="/doc/tutorials/images/stretch-factors-1.png" alt="Stretch factors preferred size" class="inline"/></p>
-<p>When the layout gets more width, the stretch factors come into play:</p>
+<div class="image">
+<img src="stretch-factors-1.png" alt=""/>
+<div class="caption">
+Stretch factors preferred size</div></div>
+    <p>When the layout gets more width, the stretch factors come into play:</p>
 <p><b>A stretch factor of 1:2</b></p>
-<p><img src="/doc/tutorials/images/stretch-factors-2.png" alt="Stretch factors increasing width" class="inline"/></p>
-<p>No matter how wide the layout is, the aspect ratio of 1:2 will always be kept, meaning that the label on the left will get 33% of the space, and the label on the right 67%:</p>
+<div class="image">
+<img src="stretch-factors-2.png" alt=""/>
+<div class="caption">
+Stretch factors increasing width</div></div>
+    <p>No matter how wide the layout is, the aspect ratio of 1:2 will always be kept, meaning that the label on the left will get 33% of the space, and the label on the right 67%:</p>
 <p><b>A stretch factor of 1:2 with different widths</b></p>
-<p><img src="/doc/tutorials/images/stretch-factors-3.png" alt="Stretch factors even more width" class="inline"/></p>
-<p>Stretch factors in QSkinny are the same as in the Qt Graphics View Framework, see <a href="https://doc.qt.io/qt-5/qgraphicslinearlayout.html#stretch-factor-in-qgraphicslinearlayout">https://doc.qt.io/qt-5/qgraphicslinearlayout.html#stretch-factor-in-qgraphicslinearlayout</a>[Stretch Factor in QGraphicsLinearLayout].</p>
+<div class="image">
+<img src="stretch-factors-3.png" alt=""/>
+<div class="caption">
+Stretch factors even more width</div></div>
+    <p>Stretch factors in QSkinny are the same as in the Qt Graphics View Framework, see <a href="https://doc.qt.io/qt-5/qgraphicslinearlayout.html#stretch-factor-in-qgraphicslinearlayout">https://doc.qt.io/qt-5/qgraphicslinearlayout.html#stretch-factor-in-qgraphicslinearlayout</a>[Stretch Factor in QGraphicsLinearLayout].</p>
 <h2><a class="anchor" id="autotoc_md32"></a>
 Nesting layouts</h2>
 <p>In a real-world application it is typical to nest several layouts in each other. The example below depicts a UI with a top bar and menu items on the left:</p>
 <p><b>A UI with nested layouts</b></p>
-<p><img src="/doc/tutorials/images/nesting-layouts.png" alt="Nested layouts" class="inline"/></p>
-<p>The code to produce the above UI could look like this (setting colors etc. omitted for brevity):</p>
+<div class="image">
+<img src="nesting-layouts.png" alt=""/>
+<div class="caption">
+Nested layouts</div></div>
+    <p>The code to produce the above UI could look like this (setting colors etc. omitted for brevity):</p>
 <div class="fragment"><div class="line">auto* outerBox = new QskLinearBox( Qt::Vertical );</div>
 <div class="line"> </div>
 <div class="line">auto* topBar = new QskLinearBox( Qt::Horizontal, outerBox );</div>
@@ -523,16 +591,22 @@ Nesting layouts</h2>
 </div><!-- fragment --><p>Here we have an outer vertical layout which divides the content into a top bar and a main box. The top bar itself consists of a horizontal layout with 3 buttons, while the main area is split into a left part with menu buttons and a right part for the main area. That left part with the menu buttons is again a vertical layout.</p>
 <p>The following diagram makes the layouts visible:</p>
 <p><b>The layout structure of the UI</b></p>
-<p><img src="/doc/tutorials/images/nesting-layouts-architecture.png" alt="Nested layouts architecture" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md33"></a>
+<div class="image">
+<img src="nesting-layouts-architecture.png" alt=""/>
+<div class="caption">
+Nested layouts architecture</div></div>
+    <h2><a class="anchor" id="autotoc_md33"></a>
 Anchoring in QSkinny</h2>
 <p>TODO</p>
 <h1><a class="anchor" id="autotoc_md34"></a>
 Skins, Skin hints and Skinlets</h1>
 <p>Skins, Skin hints and Skinlets allow the user to define how specific controls looke like. Controls are drawn on the screen by the skinlet, and therefore it will read information from both the control itself as well as read the skin hints from the skin:</p>
 <p><b>Skinlets query the control and the skin</b></p>
-<p><img src="/doc/tutorials/images/skins-1.png" alt="Styling controls" class="inline"/></p>
-<p>For instance, a button skinlet will read the margins from the skin and the text to render from the button.</p>
+<div class="image">
+<img src="skins-1.png" alt=""/>
+<div class="caption">
+Styling controls</div></div>
+    <p>For instance, a button skinlet will read the margins from the skin and the text to render from the button.</p>
 <h2><a class="anchor" id="autotoc_md35"></a>
 Skins</h2>
 <p>Skins are a way to define a look and feel for a whole set of UI controls, e.g. a night time vs. day time skin, skins for different brands or an Android Material skin. They contain all kinds of properties (i.e. skin hints) like colors, margins, fonts and more.</p>
@@ -547,10 +621,16 @@ Skins</h2>
 <div class="line">};</div>
 </div><!-- fragment --><p>The example below shows different implementations for a push button: One has a traditional desktop skin, the other is a flat button with a skin often found in mobile devices.</p>
 <p><b>desktop style button</b></p>
-<p><img src="/doc/tutorials/images/skinlets-button-1.png" alt="desktop style button" class="inline"/></p>
-<p><b>flat button</b></p>
-<p><img src="/doc/tutorials/images/skinlets-button-2.png" alt="flat button" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md36"></a>
+<div class="image">
+<img src="skinlets-button-1.png" alt=""/>
+<div class="caption">
+desktop style button</div></div>
+    <p><b>flat button</b></p>
+<div class="image">
+<img src="skinlets-button-2.png" alt=""/>
+<div class="caption">
+flat button</div></div>
+    <h2><a class="anchor" id="autotoc_md36"></a>
 Skin hints</h2>
 <p>Each instance of a button will have unique properties like its text or icon file name, but all buttons will have common properties like the (default) background color and font size. These common properties are called skin hints, and are defined in a skin. Skin hints are either colors, e.g. the background color of a button, metrics (e.g. padding) or flags (e.g. text alignment).</p>
 <p>Skin hints being part of a skin means that each skin can have different skin hints:</p>
@@ -568,8 +648,11 @@ Skin hints</h2>
 <div class="line">    }</div>
 <div class="line">};</div>
 </div><!-- fragment --><p><b>A button styled with skin hints</b></p>
-<p><img src="/doc/tutorials/images/skin-hints.png" alt="Button with skin hints" class="inline"/></p>
-<p>When writing a new skin, a developer needs to know which hints to set for which control. This usually depends on the control itself; however, since usually controls are broken down into the three primitives box, text and graphic, the methods for rendering each of them will take the following skin hints into account:</p>
+<div class="image">
+<img src="skin-hints.png" alt=""/>
+<div class="caption">
+Button with skin hints</div></div>
+    <p>When writing a new skin, a developer needs to know which hints to set for which control. This usually depends on the control itself; however, since usually controls are broken down into the three primitives box, text and graphic, the methods for rendering each of them will take the following skin hints into account:</p>
 <p>|======================================================================= |Primitive |Skin hint from <a class="el" href="classQskAspect.html" title="Lookup key for a QskSkinHintTable.">QskAspect</a> |Text |<code>Alignment</code>\ <code>Color</code>\ <code>TextColor</code>\ <code>StyleColor</code>\ <code>LinkColor</code>\ <code>Style</code>\ <code>FontRole</code></p>
 <p>|Graphic |<code>Alignment</code>\ <code>GraphicRole</code></p>
 <p>|Box | <code>Margin</code>\ <code>Metric</code> | <code>Border</code>\ <code>Color</code> | <code>Border</code>\ <code>Color</code>\ <code>Metric</code> | <code>Shape</code> |=======================================================================</p>
@@ -593,10 +676,16 @@ States and animations</h3>
 <div class="line">    }</div>
 <div class="line">};</div>
 </div><!-- fragment --><p><b>button in normal state</b></p>
-<p><img src="/doc/tutorials/images/skin-hints-states-1.png" alt="button in normal state" class="inline"/></p>
-<p><b>button in hovered state</b></p>
-<p><img src="/doc/tutorials/images/skin-hints-states-2.png" alt="button in hovered state" class="inline"/></p>
-<h3><a class="anchor" id="autotoc_md38"></a>
+<div class="image">
+<img src="skin-hints-states-1.png" alt=""/>
+<div class="caption">
+button in normal state</div></div>
+    <p><b>button in hovered state</b></p>
+<div class="image">
+<img src="skin-hints-states-2.png" alt=""/>
+<div class="caption">
+button in hovered state</div></div>
+    <h3><a class="anchor" id="autotoc_md38"></a>
 Local skin hints</h3>
 <p>It is possible to set local skin hints on specific controls to override skin-wide settings:</p>
 <div class="fragment"><div class="line">auto* label1 = new QskTextLabel( &quot;control 1&quot; );</div>
@@ -605,8 +694,11 @@ Local skin hints</h3>
 </div><!-- fragment --><p>In general it is recommended to set the skin hints in the skin rather than on the control locally, in order to separate the style from the implementation, and to allow switching between skins. How to write controls that are themable is explained in the section about <a href="Writing-own-controls.html">writing own controls</a>.</p>
 <p>Taking animations and local skin hints into account, the architecture diagram now looks like this:</p>
 <p><b>Skinlets can also read from local skinlets and animators</b></p>
-<p><img src="/doc/tutorials/images/skins-2.png" alt="Animators and local skin hints" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md39"></a>
+<div class="image">
+<img src="skins-2.png" alt=""/>
+<div class="caption">
+Animators and local skin hints</div></div>
+    <h2><a class="anchor" id="autotoc_md39"></a>
 Skinlets</h2>
 <p>A skinlet is in charge of drawing a control on the screen, similar to a Delegate in QML. It will read all the hints it needs from either the control itself or the skin, then it will draw the subcontrols that represent the control: In the sample case of a button, the skinlet will first draw the background panel, potentially consisting of a rectangle with a fill color. Then it will draw the text of the button, and last it will draw an icon, in case the button has one set.</p>
 <p>Each skin can have a different skinlet to draw a control. Often the skinlet is the same across different skins and the skins only differ in skin hints, e.g. buttons having different fonts. However, it is also possible to have completely different skinlets per skin. This ensures a separation of application code instantiating the controls itself from the visual representation of the controls.</p>
@@ -614,8 +706,11 @@ Skinlets</h2>
 <p>For a closer look at how the skinlet draws the controls in the scene graph, see <a href="scene-graph.html">scene graph representations of controls</a>.</p>
 <p>Of course each app has different controls and therefore there are also different skinlets, so a more complete version of the architecture diagram looks like this:</p>
 <p><b>There is one skinlet for each atomic control</b></p>
-<p><img src="/doc/tutorials/images/skins-3.png" alt="Animators and local skin hints" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md40"></a>
+<div class="image">
+<img src="skins-3.png" alt=""/>
+<div class="caption">
+Animators and local skin hints</div></div>
+    <h2><a class="anchor" id="autotoc_md40"></a>
 Skin factories and switching between skins</h2>
 <p>Skins are usually not created by the user directly, but by a skin factory. Such a factory keeps track of the skins registered in the system, and handles creating a new skin when the user switches them during application lifetime.</p>
 <p>When having two skins called <code>MySkin</code> and <code>OtherSkin</code> in an app, the corresponding skin factory might look like this:</p>
@@ -672,10 +767,16 @@ Skin factories and switching between skins</h2>
 <div class="line">};</div>
 </div><!-- fragment --><p>Switching between skins will change the look of <code><a class="el" href="classQskPushButton.html">QskPushButton</a></code> instances:</p>
 <p><b>button in <code>MySkin</code> (as above)</b></p>
-<p><img src="/doc/tutorials/images/skin-hints-states-1.png" alt="button in normal state" class="inline"/></p>
-<p><b>button in <code>OtherSkin</code></b></p>
-<p><img src="/doc/tutorials/images/skin-factory.png" alt="Styling controls" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md41"></a>
+<div class="image">
+<img src="skin-hints-states-1.png" alt=""/>
+<div class="caption">
+button in normal state</div></div>
+    <p><b>button in <code>OtherSkin</code></b></p>
+<div class="image">
+<img src="skin-factory.png" alt=""/>
+<div class="caption">
+Styling controls</div></div>
+    <h1><a class="anchor" id="autotoc_md41"></a>
 (Scalable) graphics</h1>
 <p>QSkinny offers support for scalable graphics, i.e. rendering SVGs that adapt to a specific size. This means that when a graphic is embedded in a layout, it can change its size when the layout is growing or shrinking, while still maintaining a correct aspect ratio.</p>
 <p>Imagine the following code, which produces the image depicted below:</p>
@@ -693,13 +794,22 @@ Skin factories and switching between skins</h2>
 <div class="line">label2-&gt;setSizePolicy( QskSizePolicy::ConstrainedPreferred, QskSizePolicy::Expanding );</div>
 <div class="line">...</div>
 </div><!-- fragment --><p><b>graphics with preferred size</b></p>
-<p><img src="/doc/tutorials/images/scalable-graphics-1.png" alt="Scalable graphics default" class="inline"/></p>
-<p>When resizing the window, the graphics will scale according to the size available in the layout:</p>
+<div class="image">
+<img src="scalable-graphics-1.png" alt=""/>
+<div class="caption">
+Scalable graphics default</div></div>
+    <p>When resizing the window, the graphics will scale according to the size available in the layout:</p>
 <p><b>graphics bounded by width</b></p>
-<p><img src="/doc/tutorials/images/scalable-graphics-2.png" alt="Scalable graphics bounded by width" class="inline"/></p>
-<p><b>graphics bounded by height</b></p>
-<p><img src="/doc/tutorials/images/scalable-graphics-3.png" alt="Scalable graphics bounded by height" class="inline"/></p>
-<p>Since we set the horizontal size policy of the graphics to <code>ConstrainedPreferred</code>, the scaling is done through QskGraphic’s <code>widthForHeight()</code> methods to maintain the correct aspect ratio. If we had set the vertical policy to <code>ConstrainedPreferred</code> and the horizontal one to e.g. <code>Expanding</code>, the layout would have queried the <code>heightForWidth()</code> method instead.</p>
+<div class="image">
+<img src="scalable-graphics-2.png" alt=""/>
+<div class="caption">
+Scalable graphics bounded by width</div></div>
+    <p><b>graphics bounded by height</b></p>
+<div class="image">
+<img src="scalable-graphics-3.png" alt=""/>
+<div class="caption">
+Scalable graphics bounded by height</div></div>
+    <p>Since we set the horizontal size policy of the graphics to <code>ConstrainedPreferred</code>, the scaling is done through QskGraphic’s <code>widthForHeight()</code> methods to maintain the correct aspect ratio. If we had set the vertical policy to <code>ConstrainedPreferred</code> and the horizontal one to e.g. <code>Expanding</code>, the layout would have queried the <code>heightForWidth()</code> method instead.</p>
 <p>Of course non-scalable graphics like PNGs and JPGs are also supported:</p>
 <div class="fragment"><div class="line">QImage image( &quot;background.jpg&quot; );</div>
 <div class="line">QskGraphic graphic = QskGraphic::fromImage( image );</div>
@@ -731,8 +841,11 @@ QSkinny - Using QSkinny and QML</h1>
 <div class="line">}</div>
 </div><!-- fragment --><p>The full Buttons example is depicted below.</p>
 <p><b>The buttons example shows how to mix QSkinny and QML</b></p>
-<p><img src="/doc/tutorials/images/buttons-example.png" alt="Buttons example" class="inline"/></p>
-<p>For more information on using C++ classes from QML, see the article about exposing attributes of {cpp} types to QML in the <a href="https://doc.qt.io/qt-5/qtqml-cppintegration-exposecppattributes.html">Qt documentation</a>.</p>
+<div class="image">
+<img src="buttons-example.png" alt=""/>
+<div class="caption">
+Buttons example</div></div>
+    <p>For more information on using C++ classes from QML, see the article about exposing attributes of {cpp} types to QML in the <a href="https://doc.qt.io/qt-5/qtqml-cppintegration-exposecppattributes.html">Qt documentation</a>.</p>
 <h1><a class="anchor" id="autotoc_md43"></a>
 Writing own controls</h1>
 <p>Writing own controls is either done by subclassing or compositing an existing displayable control like <code><a class="el" href="classQskTextLabel.html">QskTextLabel</a></code>, or by writing a completely new class including a skinlet, which is typically derived directly from <code><a class="el" href="classQskControl.html" title="Base class of all controls.">QskControl</a></code>.</p>
@@ -752,8 +865,11 @@ Subclassing existing controls</h2>
 <div class="line">    }</div>
 <div class="line">};</div>
 </div><!-- fragment --><p><b>A subclassed control with local skin hints</b></p>
-<p><img src="/doc/tutorials/images/subclassing-existing-controls.png" alt="Subclassing existing controls" class="inline"/></p>
-<p>Then there is no need to set the margins and background color for every instance of the custom text label.</p>
+<div class="image">
+<img src="subclassing-existing-controls.png" alt=""/>
+<div class="caption">
+Subclassing existing controls</div></div>
+    <p>Then there is no need to set the margins and background color for every instance of the custom text label.</p>
 <h2><a class="anchor" id="autotoc_md45"></a>
 Making custom classes skinnable</h2>
 <p>To make custom classes like the <code>TextLabel</code> class above skinnable, we need to define our own subcontrols and style them in our skin, in contrast to setting the values directly in the class. To be able to set specific values for our <code>TextLabel</code> class that are different from the generic <code><a class="el" href="classQskTextLabel.html">QskTextLabel</a></code>, we need to define our own subcontrols and substitute the generic subcontrols for them in an overriden method <code>effectiveSubcontrol()</code>:</p>
@@ -786,8 +902,11 @@ Making custom classes skinnable</h2>
 <div class="line">    }</div>
 <div class="line">};</div>
 </div><!-- fragment --><p><b>A subclassed control with skin hints defined in the skin</b></p>
-<p><img src="/doc/tutorials/images/subclassing-existing-controls.png" alt="Subclassing existing controls" class="inline"/></p>
-<p>The styling described above has the same effect as in the simpler example, but now the <code>TextLabel</code> control can be given a different style depending on the skin.</p>
+<div class="image">
+<img src="subclassing-existing-controls.png" alt=""/>
+<div class="caption">
+Subclassing existing controls</div></div>
+    <p>The styling described above has the same effect as in the simpler example, but now the <code>TextLabel</code> control can be given a different style depending on the skin.</p>
 <p>In our class we only set a custom skin hint for the panel, but as <code><a class="el" href="classQskTextLabel.html">QskTextLabel</a></code> also has a <code>Text</code> subcontrol, we could of course also define our own one for the text.</p>
 <h2><a class="anchor" id="autotoc_md46"></a>
 Compositing controls</h2>
@@ -822,8 +941,11 @@ Compositing controls</h2>
 </div><!-- fragment --><p>This allows for easy instantiation of the class with a text and a file name for the graphic:</p>
 <div class="fragment"><div class="line">auto* textAndGraphic = new TextAndGraphic( &quot;Text&quot;, &quot;cloud&quot; );</div>
 </div><!-- fragment --><p><b>A composited control</b></p>
-<p><img src="/doc/tutorials/images/compositing-controls.png" alt="Compositing controls" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md47"></a>
+<div class="image">
+<img src="compositing-controls.png" alt=""/>
+<div class="caption">
+Compositing controls</div></div>
+    <h2><a class="anchor" id="autotoc_md47"></a>
 Writing controls with a skinlet</h2>
 <p>QSkinny already comes with controls like text labels, list views, buttons etc. When there is a completely new control to be written that cannot be subclassed or composited, the skinlet for the class needs to be implemented as well.</p>
 <h3><a class="anchor" id="autotoc_md48"></a>
@@ -934,8 +1056,11 @@ Connecting class and skinlet</h3>
 <div class="line">};</div>
 </div><!-- fragment --><p>SkinFactories etc. are again omitted here. Finally we can draw our control; the effort might seem excessive, but we wrote the control with all capabilities of styling; in addition, the control will react to size changes properly. A simpler version with hardcoded values for margins, colors etc. can be written with less code.</p>
 <p><b>A class with an own skinlet</b></p>
-<p><img src="/doc/tutorials/images/control-with-skinlet.png" alt="Control with skinlet" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md51"></a>
+<div class="image">
+<img src="control-with-skinlet.png" alt=""/>
+<div class="caption">
+Control with skinlet</div></div>
+    <h1><a class="anchor" id="autotoc_md51"></a>
 Scene graph representations of controls</h1>
 <p>Each control that is displayed on the screen consists of one or more scene graph nodes. Those nodes can be either basic shapes like rectangles, or they can contain other information like positioning (used with transform nodes), opacity or clipping.</p>
 <p>The source code below shows a minimal example displaying a button:</p>
@@ -946,8 +1071,11 @@ Scene graph representations of controls</h1>
 <div class="line">window.show();</div>
 </div><!-- fragment --><p>For this example, the scene graph will contain the following nodes:</p>
 <p><b>Scene graph representation of a button</b></p>
-<p><img src="/doc/tutorials/images/skins-sg-1.png" alt="Scene graph nodes for a button" class="inline"/></p>
-<p>The top two nodes (root and Quick root item) are created for every QtQuick application. The button itself consists of 5 nodes in our case: One root note (<code>button node</code>), one node just to group its children (just labeled <code>node</code>), one geometry node for drawing the background (<code>panel node</code>), one transform node for setting the position of the text and another geometry node for displaying the text (<code>text node</code>).</p>
+<div class="image">
+<img src="skins-sg-1.png" alt=""/>
+<div class="caption">
+Scene graph nodes for a button</div></div>
+    <p>The top two nodes (root and Quick root item) are created for every QtQuick application. The button itself consists of 5 nodes in our case: One root note (<code>button node</code>), one node just to group its children (just labeled <code>node</code>), one geometry node for drawing the background (<code>panel node</code>), one transform node for setting the position of the text and another geometry node for displaying the text (<code>text node</code>).</p>
 <p>For an explanation of the different scene graph node types, see the Qt documentation of <a href="https://doc.qt.io/qt-5/qsgnode.html#NodeType-enum">QSGNode::NodeType</a>.</p>
 <p>The example above is the simplest form of a button, in practice there might be more nodes per control, for instance an opacity node or a clip node.</p>
 <p>Now we add more elements to the UI by putting the button inside a layout (<code><a class="el" href="classQskBox.html">QskBox</a></code>):</p>
@@ -959,8 +1087,11 @@ Scene graph representations of controls</h1>
 <div class="line">window.show();</div>
 </div><!-- fragment --><p>Then the scene graph has the following structure:</p>
 <p><b>Scene graph representation of a button inside a box</b></p>
-<p><img src="/doc/tutorials/images/skins-sg-2.png" alt="Scene graph nodes for a button in a box" class="inline"/></p>
-<p>Here we can see that since the box is a parent of the button, the <code>box node</code> is also a parent of the <code>button node</code> in the scene graph. Also, the box has two child nodes: The button, which is the same as in the earlier example, and a node for the panel of the box, in case the panel itself has a background color.</p>
+<div class="image">
+<img src="skins-sg-2.png" alt=""/>
+<div class="caption">
+Scene graph nodes for a button in a box</div></div>
+    <p>Here we can see that since the box is a parent of the button, the <code>box node</code> is also a parent of the <code>button node</code> in the scene graph. Also, the box has two child nodes: The button, which is the same as in the earlier example, and a node for the panel of the box, in case the panel itself has a background color.</p>
 <p>In a more complicated UI with multiple elements and more advanced layouts, the number of scene graph nodes can be quite high. This is why QSkinny tries to create as little nodes as possible and reuse as many as it can.</p>
 <h1><a class="anchor" id="autotoc_md52"></a>
 Building QSkinny for WebAssembly (Wasm)</h1>
@@ -984,8 +1115,11 @@ Run QSkinny for Wasm</h2>
 <p>Qt creates the HTML wrappers automatically, so there is not much to do except letting Emscripten start the server and open our app in the browser:</p>
 <div class="fragment"><div class="line">/usr/bin/python3 ~/dev/emsdk/upstream/emscripten/emrun.py --browser firefox --port 30001 --no_emrun_detect  ~/dev/qskinny-wasm-build/examples/bin/iotdashboard.html</div>
 </div><!-- fragment --><p><b>The IOT dashboard example in a browser</b></p>
-<p><img src="/doc/tutorials/images/iotdashboard-wasm.png" alt="The IOT dashboard example in a browser" class="inline"/> </p>
-</div></div><!-- contents -->
+<div class="image">
+<img src="iotdashboard-wasm.png" alt=""/>
+<div class="caption">
+The IOT dashboard example in a browser</div></div>
+     </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.8-->
